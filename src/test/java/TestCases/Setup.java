@@ -52,6 +52,9 @@ public class Setup {
             e.printStackTrace();
         }
     }
-
+  public static void check()
+  {
+      System.out.println("check");
+  }
 }
 
