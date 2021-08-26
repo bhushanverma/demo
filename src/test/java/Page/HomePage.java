@@ -29,6 +29,8 @@ public class HomePage extends GenericMethod {
 
     @FindBy(xpath = "//a[@data-reactid='.0.0.0.0.0.0.0']")
     WebElement HomeLogo;
+    @FindBy(xpath = "//a[@data-reactid='.0.0.0.2.0.0.5']")
+    WebElement BuyNowbutton;
 
 
     public boolean homepagelogodisplayed() {
@@ -36,4 +38,9 @@ public class HomePage extends GenericMethod {
         return Flag;
     }
 
+    public void clickonBUyNow()
+    {
+        click(BuyNowbutton);
+        holdExecutionForSeconds(3);
+    }
 }
