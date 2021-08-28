@@ -22,6 +22,8 @@ public class CreditDebitCard extends BasePage{
     @FindBy(xpath = "//span[@class='text-amount-amount']")
     private WebElement AmountValue;
     private String CardDetailsListPath = "//input[@type='tel']";
+    @FindBy(xpath = "//span[text()='Pay Now']")
+    private WebElement PayNowButton;
 
 
     public boolean verifyCreditDebitCardLogoVisible()
@@ -64,6 +66,9 @@ public class CreditDebitCard extends BasePage{
     public void enterCVV()
     {
         enterText(listHolder(2 , CardDetailsListPath) , (properties.getProperty("CardCVV")));
-        holdExecutionForSeconds(5);
+    }
+    public void clickOnPayNow()
+    {
+      click(PayNowButton);
     }
 }
