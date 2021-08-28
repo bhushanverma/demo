@@ -119,7 +119,7 @@ public class MTestCase {
       Assert.assertTrue(creditDebitCard.verifyCreditDebitCardLogoVisible());
     }
     @Test(priority = 10)
-    public void check()
+    public void TC_10()
     {
         TC_9();
         Assert.assertTrue(creditDebitCard.verifyOnPotongan10Rupiah());
