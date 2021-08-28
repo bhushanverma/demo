@@ -29,8 +29,6 @@ public class SelectPayment extends HomePage{
     public boolean verifyPaymentList()
     {
             boolean Flag = PaymentList.getText().contains(properties.getProperty("PaymentListDetails"));
-        System.out.println(properties.getProperty("PaymentListDetails"));
-        System.out.println(PaymentList.getText());
             return Flag;
     }
     public void clickOnCreditDebitCardPromo()

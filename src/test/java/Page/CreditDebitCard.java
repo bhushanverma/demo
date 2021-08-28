@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 public class CreditDebitCard extends BasePage{
@@ -22,8 +24,11 @@ public class CreditDebitCard extends BasePage{
     @FindBy(xpath = "//span[@class='text-amount-amount']")
     private WebElement AmountValue;
     private String CardDetailsListPath = "//input[@type='tel']";
-    @FindBy(xpath = "//span[text()='Pay Now']")
+    @FindBy(xpath = "//a[@class='button-main-content']")
     private WebElement PayNowButton;
+    @FindBy(xpath = "//button[@class='btn btn-sm btn-success']")
+    private WebElement OKButton;
+    private String MerchantDetails = "//div[@class='col-xs-7']";
 
 
     public boolean verifyCreditDebitCardLogoVisible()
@@ -70,5 +75,32 @@ public class CreditDebitCard extends BasePage{
     public void clickOnPayNow()
     {
       click(PayNowButton);
+      holdExecutionForSeconds(10);
+        frameSwitchTo(0);
+    }
+    public boolean verifyMerchantName()
+    {
+
+        boolean Flag = (listHolder(0 , MerchantDetails).getText()).contains(properties.getProperty("MerchantName"));
+        return Flag;
+
+    }
+    public boolean verifyAmount()
+    {
+       boolean Flag = (listHolder(1 , MerchantDetails)).getText().contains(properties.getProperty("TransactionAmount"));
+       return Flag;
+    }
+    public boolean verifyTransactionTime()
+    {
+        String s = (listHolder(2 , MerchantDetails)).getText();
+        String s2 = currentTime();
+        String Time = s.substring(0,14);
+        boolean Flag = (listHolder(2 ,MerchantDetails).getText().substring(0,14)).contains(currentTime());
+        return Flag;
+    }
+    public boolean verifyCardNumber()
+    {
+        boolean Flag = (listHolder(3 , MerchantDetails)).getText().contains(properties.getProperty("TransactionCardNumber"));
+        return Flag;
     }
 }
