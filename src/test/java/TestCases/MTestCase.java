@@ -126,6 +126,15 @@ public class MTestCase {
         Assert.assertTrue(creditDebitCard.verifyON10PercentDiscount());
         Assert.assertTrue(creditDebitCard.verifyDemoMasterCard());
     }
+    @Test(priority = 11)
+    public void TC_11()
+    {
+        TC_9();
+        creditDebitCard.enterCardNumber();
+        creditDebitCard.enteExpiryDate();
+        creditDebitCard.enterCVV();
+
+    }
 
     @AfterClass
     public void teardown()

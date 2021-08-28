@@ -1,9 +1,13 @@
 package Utilities;
 
 import SetupPack.Setup;
+import org.openqa.selenium.By;
+import org.openqa.selenium.InvalidSelectorException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import java.util.List;
 
 public class GenericMethod extends Setup {
 
@@ -46,4 +50,12 @@ public class GenericMethod extends Setup {
         {
             driver.switchTo().frame(index);
         }
+
+        public WebElement listHolder(int index , String xpath) {
+
+        List<WebElement> Options = driver.findElements(By.xpath(xpath));
+        return Options.get(index);
+
+    }
+
 }

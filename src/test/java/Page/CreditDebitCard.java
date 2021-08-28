@@ -21,6 +21,8 @@ public class CreditDebitCard extends BasePage{
     private WebElement DiscountOption;
     @FindBy(xpath = "//span[@class='text-amount-amount']")
     private WebElement AmountValue;
+    private String CardDetailsListPath = "//input[@type='tel']";
+
 
     public boolean verifyCreditDebitCardLogoVisible()
     {
@@ -50,5 +52,18 @@ public class CreditDebitCard extends BasePage{
         click(getdiscountoption(2));
         boolean Flag = (AmountValue.getText()).contains(properties.getProperty("DemoMasterCard"));
         return Flag;
+    }
+    public void enterCardNumber()
+    {
+        enterText(listHolder(0 , CardDetailsListPath) , (properties.getProperty("CardNUmber")));
+    }
+    public void enteExpiryDate()
+    {
+        enterText(listHolder(1 , CardDetailsListPath) , (properties.getProperty("CardExpiryDate")));
+    }
+    public void enterCVV()
+    {
+        enterText(listHolder(2 , CardDetailsListPath) , (properties.getProperty("CardCVV")));
+        holdExecutionForSeconds(5);
     }
 }
