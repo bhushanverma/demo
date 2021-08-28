@@ -21,6 +21,8 @@ public class HomePage extends BasePage {
     WebElement HomeLogo;
     @FindBy(xpath = "//a[@data-reactid='.0.0.0.2.0.0.5']")
     WebElement BuyNowbutton;
+    @FindBy(xpath = "//span[text()='Thank you for your purchase.']")
+    private WebElement SuccessMessage;
 
 
     public boolean homepagelogodisplayed() {
@@ -32,5 +34,10 @@ public class HomePage extends BasePage {
     {
         click(BuyNowbutton);
         holdExecutionForSeconds(3);
+    }
+    public boolean successMessageVisible()
+    {
+       boolean Flag =  wait(SuccessMessage).isDisplayed();
+       return Flag;
     }
 }

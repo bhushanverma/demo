@@ -29,6 +29,8 @@ public class CreditDebitCard extends BasePage{
     @FindBy(xpath = "//button[@class='btn btn-sm btn-success']")
     private WebElement OKButton;
     private String MerchantDetails = "//div[@class='col-xs-7']";
+    @FindBy(id = "PaRes")
+    private WebElement InputOTP;
 
 
     public boolean verifyCreditDebitCardLogoVisible()
@@ -103,4 +105,14 @@ public class CreditDebitCard extends BasePage{
         boolean Flag = (listHolder(3 , MerchantDetails)).getText().contains(properties.getProperty("TransactionCardNumber"));
         return Flag;
     }
+    public void enterOTP()
+    {
+        enterText((InputOTP), properties.getProperty("OTP"));
+    }
+    public void clickOnOKButton()
+    {
+        click(OKButton);
+        holdExecutionForSeconds(10);
+    }
+
 }
