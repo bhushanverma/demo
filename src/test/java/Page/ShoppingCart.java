@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class ShoppingCart extends HomePage{
+public class ShoppingCart extends BasePage{
     public ShoppingCart(WebDriver driver1) {
         super(driver1);
         PageFactory.initElements(driver, this);
@@ -32,6 +32,8 @@ public class ShoppingCart extends HomePage{
     WebElement AddressInput;
     @FindBy(xpath = "//input[@data-reactid='.0.0.1.0.3.0.0.5.1.0']")
     WebElement PostalCodeInput;
+    @FindBy(xpath = "//div[@data-reactid='.0.0.1.1.0']")
+    WebElement CheckOutButton;
 
     public void checkoutlogovisible()
     {
@@ -75,8 +77,12 @@ public class ShoppingCart extends HomePage{
     }
     public void editPostal()
     {
-        wait(PhoneInput).clear();
-        wait(PhoneInput).sendKeys("Phone");
+        wait(PostalCodeInput).clear();
+        wait(PostalCodeInput).sendKeys(properties.getProperty("Postal"));
     }
-
+    public void clickOnCheckOutButton()
+    {
+        click(CheckOutButton);
+        holdExecutionForSeconds(2);
+    }
 }

@@ -42,4 +42,8 @@ public class GenericMethod extends Setup {
             }
         }
 
+        public void frameSwitchTo(int index)
+        {
+            driver.switchTo().frame(index);
+        }
 }

@@ -10,21 +10,11 @@ import org.testng.annotations.Factory;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-public class HomePage extends GenericMethod {
-    public WebDriver driver;
-    public FileInputStream fis;
-    public Properties properties;
-
-    public HomePage(WebDriver driver1) {
-        this.driver = driver1;
-        PageFactory.initElements(driver, this);
-        properties = new Properties();
-        try {
-            fis = new FileInputStream("resources/Config.Properties");
-            properties.load(fis);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+public class HomePage extends BasePage {
+    public HomePage(WebDriver driver1)
+    {
+        super(driver1);
+        PageFactory.initElements(driver , this);
     }
 
     @FindBy(xpath = "//a[@data-reactid='.0.0.0.0.0.0.0']")

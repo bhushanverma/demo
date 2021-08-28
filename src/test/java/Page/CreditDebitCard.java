@@ -1,12 +1,54 @@
 package Page;
 
+import org.apache.commons.exec.ExecuteWatchdog;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CreditDebitCard extends HomePage {
+import java.util.List;
+
+public class CreditDebitCard extends BasePage{
     public CreditDebitCard(WebDriver driver1)
     {
         super(driver1);
         PageFactory.initElements(driver , this);
+    }
+    @FindBy(xpath = "//p[text()='Credit/Debit Card']")
+    private WebElement CreditDebitCardLogo;
+    @FindBy(xpath = "//input[@name='promo']")
+    private WebElement DiscountOption;
+    @FindBy(xpath = "//span[@class='text-amount-amount']")
+    private WebElement AmountValue;
+
+    public boolean verifyCreditDebitCardLogoVisible()
+    {
+        boolean Flag = CreditDebitCardLogo.isDisplayed();
+        return Flag;
+    }
+    public WebElement getdiscountoption(int index)
+    {
+        List<WebElement> Options = DiscountOption.findElements(By.xpath("//input[@name='promo']"));
+        return Options.get(index);
+    }
+
+    public boolean verifyON10PercentDiscount()
+    {
+        click(getdiscountoption(1));
+        boolean Flag = (AmountValue.getText()).contains(properties.getProperty("10PercentDiscount"));
+        return Flag;
+    }
+    public boolean verifyOnPotongan10Rupiah()
+    {
+        click(getdiscountoption(0));
+        boolean Flag = (AmountValue.getText()).contains(properties.getProperty("Potongan10Rupiah"));
+        return Flag;
+    }
+    public boolean verifyDemoMasterCard()
+    {
+        click(getdiscountoption(2));
+        boolean Flag = (AmountValue.getText()).contains(properties.getProperty("DemoMasterCard"));
+        return Flag;
     }
 }
