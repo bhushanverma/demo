@@ -33,6 +33,8 @@ public class CreditDebitCard extends BasePage{
     private WebElement InputOTP;
     @FindBy(xpath = "//span[text()='Transaction failed']")
     private WebElement FailedMessage;
+    @FindBy(xpath = "//button[@name='cancel']")
+    private WebElement CancelButton;
 
 
     public boolean verifyCreditDebitCardLogoVisible()
@@ -126,6 +128,10 @@ public class CreditDebitCard extends BasePage{
         frameSwitchTo(0);
         boolean Flag = FailedMessage.isDisplayed();
         return Flag;
+    }
+    public void clickOnCancelButton()
+    {
+        click(CancelButton);
     }
 
 }
