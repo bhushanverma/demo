@@ -31,6 +31,8 @@ public class CreditDebitCard extends BasePage{
     private String MerchantDetails = "//div[@class='col-xs-7']";
     @FindBy(id = "PaRes")
     private WebElement InputOTP;
+    @FindBy(xpath = "//span[text()='Transaction failed']")
+    private WebElement FailedMessage;
 
 
     public boolean verifyCreditDebitCardLogoVisible()
@@ -113,6 +115,17 @@ public class CreditDebitCard extends BasePage{
     {
         click(OKButton);
         holdExecutionForSeconds(10);
+    }
+    public void enterInValidOTP()
+    {
+        enterText((InputOTP), properties.getProperty("InvalidOTP"));
+    }
+    public boolean failedScreenDiplayed()
+    {
+        holdExecutionForSeconds(3);
+        frameSwitchTo(0);
+        boolean Flag = FailedMessage.isDisplayed();
+        return Flag;
     }
 
 }
