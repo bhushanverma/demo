@@ -82,7 +82,7 @@ public class CreditDebitCard extends BasePage{
     {
       click(PayNowButton);
       holdExecutionForSeconds(10);
-        frameSwitchTo(0);
+      frameSwitchTo(0);
     }
     public boolean verifyMerchantName()
     {
@@ -98,9 +98,6 @@ public class CreditDebitCard extends BasePage{
     }
     public boolean verifyTransactionTime()
     {
-        String s = (listHolder(2 , MerchantDetails)).getText();
-        String s2 = currentTime();
-        String Time = s.substring(0,14);
         boolean Flag = (listHolder(2 ,MerchantDetails).getText().substring(0,14)).contains(currentTime());
         return Flag;
     }

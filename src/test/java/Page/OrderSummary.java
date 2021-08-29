@@ -36,7 +36,7 @@ public class OrderSummary extends HomePage{
 
     public boolean verifyOrderSummaryLogoVisible()
     {
-        frameSwitchTo(0);
+        //frameSwitchTo(0);
         boolean Flag =  wait(OrderSummmaryLogo).isDisplayed();
         return Flag;
     }

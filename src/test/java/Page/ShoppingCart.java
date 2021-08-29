@@ -34,22 +34,58 @@ public class ShoppingCart extends BasePage{
     WebElement PostalCodeInput;
     @FindBy(xpath = "//div[@data-reactid='.0.0.1.1.0']")
     WebElement CheckOutButton;
+    private String ShoppingCartAttribute = "//td[@class='input-label']";
 
-    public void checkoutlogovisible()
+    public boolean checkoutlogovisible()
     {
-        click(CheckoutLogo);
+       boolean Flag = wait(CheckoutLogo).isDisplayed() ;
+       return Flag;
     }
-    public void verifymidtransPresent(){wait(Midtrans).isDisplayed();}
-    public void verifyPillowPrice()
+    public boolean verifymidtransPresent()
     {
-        String price = PillowPrice.getText();
-        Assert.assertEquals(price,properties.getProperty("Cost"));
+       boolean Flag = (wait(Midtrans)).isDisplayed();
+       return Flag;
     }
-    public void verifyNameEmailPhoneNoCityAddressPostalCode()
+    public boolean verifyPillowPrice()
     {
-        String details = wait(Detailscontainer).getText();
-        Assert.assertEquals(details , properties.getProperty("CartCustomerDetails"));
+        boolean Flag = (wait(PillowPrice).getText()).contains(properties.getProperty("Cost"));
+       // String price = PillowPrice.getText();
+       // Assert.assertEquals(price,properties.getProperty("Cost"));
+        return Flag;
     }
+    public boolean verifyNameAttribute()
+    {
+        boolean Flag = (listHolder(0 , ShoppingCartAttribute)).getText().equals((properties.getProperty("CartCustomerDetails")).substring(0,4));
+       // String details = wait(Detailscontainer).getText();
+       // Assert.assertEquals(details , properties.getProperty("CartCustomerDetails"));
+        return Flag;
+    }
+    public boolean verifyEmailAttributeName()
+    {
+        boolean Flag = ((listHolder(1 , ShoppingCartAttribute)).getText()).equals((properties.getProperty("CartCustomerDetails")).substring(4,9));
+        return Flag;
+    }
+    public boolean verifyPhoneAttributeName()
+    {
+        boolean Flag = (listHolder(2 , ShoppingCartAttribute)).getText().equals((properties.getProperty("CartCustomerDetails")).substring(9,17));
+        return Flag;
+    }
+    public boolean verifyCityAttributeName()
+    {
+        boolean Flag = (listHolder(3 , ShoppingCartAttribute)).getText().equals((properties.getProperty("CartCustomerDetails")).substring(17,21));
+        return Flag;
+    }
+    public boolean verifyAddressAttributeName()
+    {
+        boolean Flag = (listHolder(4 , ShoppingCartAttribute)).getText().equals((properties.getProperty("CartCustomerDetails")).substring(21,28));
+        return Flag;
+    }
+    public boolean verifyPostalAttributeName()
+    {
+        boolean Flag = (listHolder(5 , ShoppingCartAttribute)).getText().equals((properties.getProperty("CartCustomerDetails")).substring(28,39));
+        return Flag;
+    }
+
     public void editName()
     {
         wait(NameInput).clear();
@@ -84,5 +120,6 @@ public class ShoppingCart extends BasePage{
     {
         click(CheckOutButton);
         holdExecutionForSeconds(2);
+        frameSwitchTo(0);
     }
 }
