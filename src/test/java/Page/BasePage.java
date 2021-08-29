@@ -3,7 +3,6 @@ package Page;
 import Utilities.GenericMethod;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-
 import java.io.FileInputStream;
 import java.util.Properties;
 
