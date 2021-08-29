@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 public class ShoppingCart extends BasePage{
     public ShoppingCart(WebDriver driver1) {
@@ -18,8 +17,6 @@ public class ShoppingCart extends BasePage{
     WebElement Midtrans;
     @FindBy(xpath = "//td[@data-reactid='.0.0.1.0.1.0.1.1.2']")
     WebElement PillowPrice;
-    @FindBy(xpath = "//tbody[@data-reactid='.0.0.1.0.3.0.0']")
-    WebElement Detailscontainer;
     @FindBy(xpath = "//input[@data-reactid='.0.0.1.0.3.0.0.0.1.0']")
     WebElement NameInput;
     @FindBy(xpath = "//input[@data-reactid='.0.0.1.0.3.0.0.1.1.0']")
@@ -43,21 +40,17 @@ public class ShoppingCart extends BasePage{
     }
     public boolean verifymidtransPresent()
     {
-       boolean Flag = (wait(Midtrans)).isDisplayed();
+       boolean Flag = wait(Midtrans).isDisplayed();
        return Flag;
     }
     public boolean verifyPillowPrice()
     {
-        boolean Flag = (wait(PillowPrice).getText()).contains(properties.getProperty("Cost"));
-       // String price = PillowPrice.getText();
-       // Assert.assertEquals(price,properties.getProperty("Cost"));
+        boolean Flag = (wait(PillowPrice).getText()).equalsIgnoreCase(properties.getProperty("Cost"));
         return Flag;
     }
     public boolean verifyNameAttribute()
     {
         boolean Flag = (listHolder(0 , ShoppingCartAttribute)).getText().equals((properties.getProperty("CartCustomerDetails")).substring(0,4));
-       // String details = wait(Detailscontainer).getText();
-       // Assert.assertEquals(details , properties.getProperty("CartCustomerDetails"));
         return Flag;
     }
     public boolean verifyEmailAttributeName()
@@ -119,7 +112,6 @@ public class ShoppingCart extends BasePage{
     public void clickOnCheckOutButton()
     {
         click(CheckOutButton);
-        holdExecutionForSeconds(2);
         frameSwitchTo(0);
     }
 }
