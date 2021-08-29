@@ -4,27 +4,17 @@
   <test thread-count="5" verbose="0" name="test(failed)">
     <groups>
       <run>
+        <include name="Req"/>
         <include name="regression"/>
       </run>
     </groups>
     <classes>
       <class name="TestCases.MTestCase">
         <methods>
-          <include name="verifyAllPaymentOptionsListOnPaymentPage"/>
-          <include name="verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen"/>
-          <include name="verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup"/>
-          <include name="verifyClickOnBuyNowRedirectToCheckOutPage"/>
-          <include name="verifyClickingOnContinueButtonRedirectSelectPaymentPage"/>
-          <include name="verifyCheckOutDetails"/>
           <include name="verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails"/>
-          <include name="verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable"/>
-          <include name="verifyAfterEnteringValidCardDetailsPayNowEnabled"/>
-          <include name="verifyOnClickingCancelButtonRedirectToOrderFailedScreen"/>
-          <include name="verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen"/>
-          <include name="verifyMidTransPillowAddedToCartWith20000"/>
-          <include name="verifyOrderAmountAndApplyCouponCodeAndValidate"/>
-          <include name="verifyPriceProductNameDetailsOnOrderSummeryPopup"/>
-          <include name="verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen"/>
+          <include name="launchWebsite"/>
+          <include name="tearUp"/>
+          <include name="teardown"/>
         </methods>
       </class> <!-- TestCases.MTestCase -->
     </classes>

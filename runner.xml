@@ -4,9 +4,11 @@
     <test thread-count="1" name="test" parallel="false">
         <groups>
             <run>
-                <include name="regression"></include>
+                <include name="Req"/>
+                <include name="regression"/>
             </run>
         </groups>
+
         <classes>
             <class name="TestCases.MTestCase"/>
         </classes>

@@ -17,7 +17,7 @@ public class MTestCase {
     SelectPayment selectPayment;
     CreditDebitCard creditDebitCard;
 
-    @BeforeClass
+    @BeforeClass(groups = {"Req"})
     public void tearUp() {
         driver = Setup.LaunchBrowser("chrome");
         homePage = new HomePage(driver);
@@ -27,7 +27,7 @@ public class MTestCase {
         creditDebitCard = new CreditDebitCard(driver);
     }
 
-    @BeforeMethod
+    @BeforeMethod(groups = {"Req"})
     public void launchWebsite(){
         driver.get(homePage.properties.getProperty("URL"));
         homePage.holdExecutionForSeconds(1);
@@ -44,7 +44,7 @@ public class MTestCase {
 
     }
 
-    @Test(priority = 2 , groups = {"regression" , "smoke"})
+    @Test(priority = 2,groups = {"regression","smoke"})
     public void verifyClickOnBuyNowRedirectToCheckOutPage()
     {
         homePage.clickonBUyNow();
@@ -76,7 +76,7 @@ public class MTestCase {
         shoppingCart.editAddress();
         shoppingCart.editPostal();
     }
-    @Test(priority = 5 , groups = {"regression" , "smoke"})
+    @Test(priority = 5,groups={"regression","smoke"})
     public void verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup()
     {
         verifyClickOnBuyNowRedirectToCheckOutPage();
@@ -181,7 +181,7 @@ public class MTestCase {
         creditDebitCard.clickOnCancelButton();
         Assert.assertTrue(creditDebitCard.failedScreenDiplayed());
     }
-    @AfterClass
+    @AfterClass(groups = {"Req"})
     public void teardown()
     {
         driver.quit();

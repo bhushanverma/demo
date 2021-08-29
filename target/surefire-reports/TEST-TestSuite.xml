@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="0.971" tests="15" errors="0" skipped="0" failures="15">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="207.474" tests="15" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_271\jre\bin"/>
@@ -63,108 +63,23 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase name="verifyMidTransPillowAddedToCartWith20000" classname="TestCases.MTestCase" time="0.03">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at TestCases.MTestCase.verifyMidTransPillowAddedToCartWith20000(MTestCase.java:40)
+  <testcase name="verifyMidTransPillowAddedToCartWith20000" classname="TestCases.MTestCase" time="0.673"/>
+  <testcase name="verifyClickOnBuyNowRedirectToCheckOutPage" classname="TestCases.MTestCase" time="0.302"/>
+  <testcase name="verifyCheckOutDetails" classname="TestCases.MTestCase" time="0.616"/>
+  <testcase name="verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable" classname="TestCases.MTestCase" time="2.576"/>
+  <testcase name="verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup" classname="TestCases.MTestCase" time="2.673"/>
+  <testcase name="verifyPriceProductNameDetailsOnOrderSummeryPopup" classname="TestCases.MTestCase" time="5.447"/>
+  <testcase name="verifyClickingOnContinueButtonRedirectSelectPaymentPage" classname="TestCases.MTestCase" time="2.98"/>
+  <testcase name="verifyAllPaymentOptionsListOnPaymentPage" classname="TestCases.MTestCase" time="3.513"/>
+  <testcase name="verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen" classname="TestCases.MTestCase" time="3.941"/>
+  <testcase name="verifyOrderAmountAndApplyCouponCodeAndValidate" classname="TestCases.MTestCase" time="5.289"/>
+  <testcase name="verifyAfterEnteringValidCardDetailsPayNowEnabled" classname="TestCases.MTestCase" time="17.077"/>
+  <testcase name="verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails" classname="TestCases.MTestCase" time="17.412">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at TestCases.MTestCase.verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails(MTestCase.java:159)
 </failure>
   </testcase>
-  <testcase name="verifyClickOnBuyNowRedirectToCheckOutPage" classname="TestCases.MTestCase" time="0">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
-</failure>
-  </testcase>
-  <testcase name="verifyCheckOutDetails" classname="TestCases.MTestCase" time="0.001">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at TestCases.MTestCase.verifyCheckOutDetails(MTestCase.java:57)
-</failure>
-  </testcase>
-  <testcase name="verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable" classname="TestCases.MTestCase" time="0.001">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at TestCases.MTestCase.verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable(MTestCase.java:70)
-</failure>
-  </testcase>
-  <testcase name="verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup" classname="TestCases.MTestCase" time="0.001">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
-	at TestCases.MTestCase.verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup(MTestCase.java:82)
-</failure>
-  </testcase>
-  <testcase name="verifyPriceProductNameDetailsOnOrderSummeryPopup" classname="TestCases.MTestCase" time="0">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at TestCases.MTestCase.verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable(MTestCase.java:70)
-	at TestCases.MTestCase.verifyPriceProductNameDetailsOnOrderSummeryPopup(MTestCase.java:90)
-</failure>
-  </testcase>
-  <testcase name="verifyClickingOnContinueButtonRedirectSelectPaymentPage" classname="TestCases.MTestCase" time="0">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
-	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
-</failure>
-  </testcase>
-  <testcase name="verifyAllPaymentOptionsListOnPaymentPage" classname="TestCases.MTestCase" time="0">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
-	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
-	at TestCases.MTestCase.verifyAllPaymentOptionsListOnPaymentPage(MTestCase.java:111)
-</failure>
-  </testcase>
-  <testcase name="verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen" classname="TestCases.MTestCase" time="0">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
-	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
-	at TestCases.MTestCase.verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(MTestCase.java:131)
-</failure>
-  </testcase>
-  <testcase name="verifyOrderAmountAndApplyCouponCodeAndValidate" classname="TestCases.MTestCase" time="0.001">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
-	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
-	at TestCases.MTestCase.verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(MTestCase.java:131)
-	at TestCases.MTestCase.verifyOrderAmountAndApplyCouponCodeAndValidate(MTestCase.java:138)
-</failure>
-  </testcase>
-  <testcase name="verifyAfterEnteringValidCardDetailsPayNowEnabled" classname="TestCases.MTestCase" time="0.001">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
-	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
-	at TestCases.MTestCase.verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(MTestCase.java:131)
-	at TestCases.MTestCase.verifyAfterEnteringValidCardDetailsPayNowEnabled(MTestCase.java:146)
-</failure>
-  </testcase>
-  <testcase name="verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails" classname="TestCases.MTestCase" time="0.001">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
-	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
-	at TestCases.MTestCase.verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(MTestCase.java:131)
-	at TestCases.MTestCase.verifyAfterEnteringValidCardDetailsPayNowEnabled(MTestCase.java:146)
-	at TestCases.MTestCase.verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails(MTestCase.java:155)
-</failure>
-  </testcase>
-  <testcase name="verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen" classname="TestCases.MTestCase" time="0.001">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
-	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
-	at TestCases.MTestCase.verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(MTestCase.java:131)
-	at TestCases.MTestCase.verifyAfterEnteringValidCardDetailsPayNowEnabled(MTestCase.java:146)
-	at TestCases.MTestCase.verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen(MTestCase.java:164)
-</failure>
-  </testcase>
-  <testcase name="verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen" classname="TestCases.MTestCase" time="0">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
-	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
-	at TestCases.MTestCase.verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(MTestCase.java:131)
-	at TestCases.MTestCase.verifyAfterEnteringValidCardDetailsPayNowEnabled(MTestCase.java:146)
-	at TestCases.MTestCase.verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen(MTestCase.java:172)
-</failure>
-  </testcase>
-  <testcase name="verifyOnClickingCancelButtonRedirectToOrderFailedScreen" classname="TestCases.MTestCase" time="0">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
-	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
-	at TestCases.MTestCase.verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(MTestCase.java:131)
-	at TestCases.MTestCase.verifyAfterEnteringValidCardDetailsPayNowEnabled(MTestCase.java:146)
-	at TestCases.MTestCase.verifyOnClickingCancelButtonRedirectToOrderFailedScreen(MTestCase.java:180)
-</failure>
-  </testcase>
+  <testcase name="verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen" classname="TestCases.MTestCase" time="29.553"/>
+  <testcase name="verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen" classname="TestCases.MTestCase" time="30.807"/>
+  <testcase name="verifyOnClickingCancelButtonRedirectToOrderFailedScreen" classname="TestCases.MTestCase" time="21.154"/>
 </testsuite>

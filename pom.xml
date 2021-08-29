@@ -49,9 +49,7 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>runner.xml</suiteXmlFile>
                     </suiteXmlFiles>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                    <executable>C:\Program Files (x86)\Java\jdk1.8.0_271\bin\javac</executable>
+
                 </configuration>
             </plugin>
         </plugins>
