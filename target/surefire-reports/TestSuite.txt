@@ -1,0 +1,93 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 15, Errors: 0, Skipped: 0, Time elapsed: 0.971 sec <<< FAILURE! - in TestSuite
+verifyMidTransPillowAddedToCartWith20000(TestCases.MTestCase)  Time elapsed: 0.03 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at TestCases.MTestCase.verifyMidTransPillowAddedToCartWith20000(MTestCase.java:40)
+
+verifyClickOnBuyNowRedirectToCheckOutPage(TestCases.MTestCase)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+
+verifyCheckOutDetails(TestCases.MTestCase)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at TestCases.MTestCase.verifyCheckOutDetails(MTestCase.java:57)
+
+verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable(TestCases.MTestCase)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at TestCases.MTestCase.verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable(MTestCase.java:70)
+
+verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup(TestCases.MTestCase)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+	at TestCases.MTestCase.verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup(MTestCase.java:82)
+
+verifyPriceProductNameDetailsOnOrderSummeryPopup(TestCases.MTestCase)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at TestCases.MTestCase.verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable(MTestCase.java:70)
+	at TestCases.MTestCase.verifyPriceProductNameDetailsOnOrderSummeryPopup(MTestCase.java:90)
+
+verifyClickingOnContinueButtonRedirectSelectPaymentPage(TestCases.MTestCase)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
+
+verifyAllPaymentOptionsListOnPaymentPage(TestCases.MTestCase)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
+	at TestCases.MTestCase.verifyAllPaymentOptionsListOnPaymentPage(MTestCase.java:111)
+
+verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(TestCases.MTestCase)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
+	at TestCases.MTestCase.verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(MTestCase.java:131)
+
+verifyOrderAmountAndApplyCouponCodeAndValidate(TestCases.MTestCase)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
+	at TestCases.MTestCase.verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(MTestCase.java:131)
+	at TestCases.MTestCase.verifyOrderAmountAndApplyCouponCodeAndValidate(MTestCase.java:138)
+
+verifyAfterEnteringValidCardDetailsPayNowEnabled(TestCases.MTestCase)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
+	at TestCases.MTestCase.verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(MTestCase.java:131)
+	at TestCases.MTestCase.verifyAfterEnteringValidCardDetailsPayNowEnabled(MTestCase.java:146)
+
+verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails(TestCases.MTestCase)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
+	at TestCases.MTestCase.verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(MTestCase.java:131)
+	at TestCases.MTestCase.verifyAfterEnteringValidCardDetailsPayNowEnabled(MTestCase.java:146)
+	at TestCases.MTestCase.verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails(MTestCase.java:155)
+
+verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen(TestCases.MTestCase)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
+	at TestCases.MTestCase.verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(MTestCase.java:131)
+	at TestCases.MTestCase.verifyAfterEnteringValidCardDetailsPayNowEnabled(MTestCase.java:146)
+	at TestCases.MTestCase.verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen(MTestCase.java:164)
+
+verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen(TestCases.MTestCase)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
+	at TestCases.MTestCase.verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(MTestCase.java:131)
+	at TestCases.MTestCase.verifyAfterEnteringValidCardDetailsPayNowEnabled(MTestCase.java:146)
+	at TestCases.MTestCase.verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen(MTestCase.java:172)
+
+verifyOnClickingCancelButtonRedirectToOrderFailedScreen(TestCases.MTestCase)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
+	at TestCases.MTestCase.verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(MTestCase.java:131)
+	at TestCases.MTestCase.verifyAfterEnteringValidCardDetailsPayNowEnabled(MTestCase.java:146)
+	at TestCases.MTestCase.verifyOnClickingCancelButtonRedirectToOrderFailedScreen(MTestCase.java:180)
+

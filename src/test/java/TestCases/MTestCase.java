@@ -34,33 +34,38 @@ public class MTestCase {
         Assert.assertTrue(homePage.homepagelogodisplayed());
     }
 
-    @Test(priority = 1)
-    public void TC_1()
+    @Test(priority = 1 , groups = {"regression"})
+    public void verifyMidTransPillowAddedToCartWith20000()
     {
         homePage.clickonBUyNow();
-        shoppingCart.checkoutlogovisible();
-        shoppingCart.verifymidtransPresent();
-        shoppingCart.verifyPillowPrice();
+        Assert.assertTrue(shoppingCart.checkoutlogovisible());
+        Assert.assertTrue(shoppingCart.verifymidtransPresent());
+        Assert.assertTrue(shoppingCart.verifyPillowPrice());
 
     }
 
-    @Test(priority = 2)
-    public void TC_2()
+    @Test(priority = 2 , groups = {"regression" , "smoke"})
+    public void verifyClickOnBuyNowRedirectToCheckOutPage()
     {
         homePage.clickonBUyNow();
-        shoppingCart.checkoutlogovisible();
+        Assert.assertTrue(shoppingCart.checkoutlogovisible());
     }
 
-    @Test(priority = 3)
-    public void TC_3()
+    @Test(priority = 3 , groups = {"regression"})
+    public void verifyCheckOutDetails()
     {
         homePage.clickonBUyNow();
-        shoppingCart.checkoutlogovisible();
-        shoppingCart.verifyNameEmailPhoneNoCityAddressPostalCode();
+        Assert.assertTrue(shoppingCart.checkoutlogovisible());
+        Assert.assertTrue(shoppingCart.verifyNameAttribute());
+        Assert.assertTrue(shoppingCart.verifyEmailAttributeName());
+        Assert.assertTrue(shoppingCart.verifyPhoneAttributeName());
+        Assert.assertTrue(shoppingCart.verifyCityAttributeName());
+        Assert.assertTrue(shoppingCart.verifyAddressAttributeName());
+        Assert.assertTrue(shoppingCart.verifyPostalAttributeName());
 
     }
-    @Test(priority = 4)
-    public void TC_4()
+    @Test(priority = 4 , groups = {"regression"})
+    public void verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable()
     {
         homePage.clickonBUyNow();
         shoppingCart.checkoutlogovisible();
@@ -71,71 +76,111 @@ public class MTestCase {
         shoppingCart.editAddress();
         shoppingCart.editPostal();
     }
-    @Test(priority = 5)
-    public void TC_5()
+    @Test(priority = 5 , groups = {"regression" , "smoke"})
+    public void verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup()
     {
-        TC_4();
+        verifyClickOnBuyNowRedirectToCheckOutPage();
         shoppingCart.clickOnCheckOutButton();
         Assert.assertTrue(orderSummary.verifyOrderSummaryLogoVisible());
     }
 
-    @Test(priority = 6)
-    public void TC_6()
+    @Test(priority = 6 , groups = {"regression"})
+    public void verifyPriceProductNameDetailsOnOrderSummeryPopup()
     {
-        TC_5();
+        verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable();
+        shoppingCart.clickOnCheckOutButton();
+        Assert.assertTrue(orderSummary.verifyItemName());
+        Assert.assertTrue(orderSummary.verifyAmountValueDetails());
         orderSummary.clickOnShippingDetails();
         Assert.assertTrue(orderSummary.verifyShippingDetailsName());
         Assert.assertTrue(orderSummary.verifyShippingDetailsPhoneNo());
         Assert.assertTrue(orderSummary.verifyShippingDetailsEmail());
         Assert.assertTrue(orderSummary.verifyShippingDetailsAddress());
     }
-    @Test(priority = 7)
-    public void TC_7()
+    @Test(priority = 7 , groups = {"regression", "smoke"})
+    public void verifyClickingOnContinueButtonRedirectSelectPaymentPage()
     {
-        TC_6();
+        verifyClickOnBuyNowRedirectToCheckOutPage();
+        shoppingCart.clickOnCheckOutButton();
         orderSummary.clickOnContinueButton();
         Assert.assertTrue(selectPayment.selectPaymentLogoVisible());
     }
-    @Test(priority = 8)
-    public void TC_8()
+    @Test(priority = 8 , groups = {"regression"})
+    public void verifyAllPaymentOptionsListOnPaymentPage()
     {
-        homePage.clickonBUyNow();
-        shoppingCart.clickOnCheckOutButton();
-        Assert.assertTrue(orderSummary.verifyOrderSummaryLogoVisible());
-        orderSummary.clickOnContinueButton();
-        Assert.assertTrue(selectPayment.selectPaymentLogoVisible());
-        Assert.assertTrue(selectPayment.verifyPaymentList());
+        verifyClickingOnContinueButtonRedirectSelectPaymentPage();
+        Assert.assertTrue(selectPayment.verifyCreditDebitCard_1());
+        Assert.assertTrue(selectPayment.verifyATMBankTransfer_2());
+        Assert.assertTrue(selectPayment.verifyGoPayotherEWallets_3());
+        Assert.assertTrue(selectPayment.verifyShopeePayotherEWallets_4());
+        Assert.assertTrue(selectPayment.verifyKlikBCA_5());
+        Assert.assertTrue(selectPayment.verifyBCAKlikPay_6());
+        Assert.assertTrue(selectPayment.verifyOCTOClicks_7());
+        Assert.assertTrue(selectPayment.verifyDanamonOnlineBanking_8());
+        Assert.assertTrue(selectPayment.verifyPayBRI_9());
+        Assert.assertTrue(selectPayment.verifyLINEPayEcashMandiriEcash_10());
+        Assert.assertTrue(selectPayment.verifyTelkomselCash_11());
+        Assert.assertTrue(selectPayment.verifyIndomaret_12());
+        Assert.assertTrue(selectPayment.verifyAlfaGroup_13());
+        Assert.assertTrue(selectPayment.verifyAkulaku_14());
 
     }
-    @Test(priority = 9)
-    public void TC_9()
+    @Test(priority = 9 , groups = {"regression" , "smoke"})
+    public void verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen()
     {
-      homePage.clickonBUyNow();
-      shoppingCart.clickOnCheckOutButton();
-      Assert.assertTrue(orderSummary.verifyOrderSummaryLogoVisible());
-      orderSummary.clickOnContinueButton();
-      Assert.assertTrue(selectPayment.selectPaymentLogoVisible());
+      verifyClickingOnContinueButtonRedirectSelectPaymentPage();
       selectPayment.clickOnCreditDebitCardPromo();
       Assert.assertTrue(creditDebitCard.verifyCreditDebitCardLogoVisible());
     }
-    @Test(priority = 10)
-    public void TC_10()
+    @Test(priority = 10 , groups = {"regression"})
+    public void verifyOrderAmountAndApplyCouponCodeAndValidate()
     {
-        TC_9();
+        verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen();
         Assert.assertTrue(creditDebitCard.verifyOnPotongan10Rupiah());
         Assert.assertTrue(creditDebitCard.verifyON10PercentDiscount());
         Assert.assertTrue(creditDebitCard.verifyDemoMasterCard());
     }
-    @Test(priority = 11)
-    public void TC_11()
+    @Test(priority = 11 , groups = {"regression" , "smoke"})
+    public void verifyAfterEnteringValidCardDetailsPayNowEnabled()
     {
-        TC_9();
+        verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen();
         creditDebitCard.enterCardNumber();
         creditDebitCard.enteExpiryDate();
         creditDebitCard.enterCVV();
-
+        creditDebitCard.clickOnPayNow();
     }
-
+    @Test(priority = 12 , groups = {"regression"})
+    public void verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails()
+    {
+        verifyAfterEnteringValidCardDetailsPayNowEnabled();
+        Assert.assertTrue(creditDebitCard.verifyMerchantName());
+        Assert.assertTrue(creditDebitCard.verifyAmount());
+        Assert.assertTrue(creditDebitCard.verifyCardNumber());
+        Assert.assertTrue(creditDebitCard.verifyTransactionTime());
+    }
+    @Test(priority = 13 , groups = {"regression" , "smoke"})
+    public void verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen()
+    {
+        verifyAfterEnteringValidCardDetailsPayNowEnabled();
+        creditDebitCard.enterOTP();
+        creditDebitCard.clickOnOKButton();
+        Assert.assertTrue(homePage.successMessageVisible());
+    }
+    @Test(priority = 14 , groups = {"regression"})
+    public void verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen()
+    {
+        verifyAfterEnteringValidCardDetailsPayNowEnabled();
+        creditDebitCard.enterInValidOTP();
+        creditDebitCard.clickOnOKButton() ;
+        Assert.assertTrue(creditDebitCard.failedScreenDiplayed());
+    }
+    @Test(priority = 15 , groups = {"regression"})
+    public void verifyOnClickingCancelButtonRedirectToOrderFailedScreen()
+    {
+        verifyAfterEnteringValidCardDetailsPayNowEnabled();
+        creditDebitCard.clickOnCancelButton();
+        Assert.assertTrue(creditDebitCard.failedScreenDiplayed());
+    }
     @AfterClass
     public void teardown()
     {

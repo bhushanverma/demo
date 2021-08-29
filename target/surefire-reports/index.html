@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 15 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-REGRESSION-TEST">
+              <span class="suite-name border-failed">REGRESSION-TEST</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-REGRESSION-TEST">
+                    <span>C:\demo\runner.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-REGRESSION-TEST">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-REGRESSION-TEST">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-REGRESSION-TEST">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-REGRESSION-TEST">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-REGRESSION-TEST">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-REGRESSION-TEST">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">15 methods, 15 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-REGRESSION-TEST" class="hide-methods failed suite-REGRESSION-TEST"> (hide)</a> <!-- hide-methods failed suite-REGRESSION-TEST -->
+                      <a href="#" panel-name="suite-REGRESSION-TEST" class="show-methods failed suite-REGRESSION-TEST"> (show)</a> <!-- show-methods failed suite-REGRESSION-TEST -->
+                    </span>
+                    <div class="method-list-content failed suite-REGRESSION-TEST">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-REGRESSION-TEST" title="TestCases.MTestCase" hash-for-method="verifyAfterEnteringValidCardDetailsPayNowEnabled">verifyAfterEnteringValidCardDetailsPayNowEnabled</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-REGRESSION-TEST" title="TestCases.MTestCase" hash-for-method="verifyAllPaymentOptionsListOnPaymentPage">verifyAllPaymentOptionsListOnPaymentPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-REGRESSION-TEST" title="TestCases.MTestCase" hash-for-method="verifyCheckOutDetails">verifyCheckOutDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-REGRESSION-TEST" title="TestCases.MTestCase" hash-for-method="verifyClickOnBuyNowRedirectToCheckOutPage">verifyClickOnBuyNowRedirectToCheckOutPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-REGRESSION-TEST" title="TestCases.MTestCase" hash-for-method="verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen">verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-REGRESSION-TEST" title="TestCases.MTestCase" hash-for-method="verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup">verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-REGRESSION-TEST" title="TestCases.MTestCase" hash-for-method="verifyClickingOnContinueButtonRedirectSelectPaymentPage">verifyClickingOnContinueButtonRedirectSelectPaymentPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-REGRESSION-TEST" title="TestCases.MTestCase" hash-for-method="verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails">verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-REGRESSION-TEST" title="TestCases.MTestCase" hash-for-method="verifyMidTransPillowAddedToCartWith20000">verifyMidTransPillowAddedToCartWith20000</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-REGRESSION-TEST" title="TestCases.MTestCase" hash-for-method="verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable">verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-REGRESSION-TEST" title="TestCases.MTestCase" hash-for-method="verifyOnClickingCancelButtonRedirectToOrderFailedScreen">verifyOnClickingCancelButtonRedirectToOrderFailedScreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-REGRESSION-TEST" title="TestCases.MTestCase" hash-for-method="verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen">verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-REGRESSION-TEST" title="TestCases.MTestCase" hash-for-method="verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen">verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-REGRESSION-TEST" title="TestCases.MTestCase" hash-for-method="verifyOrderAmountAndApplyCouponCodeAndValidate">verifyOrderAmountAndApplyCouponCodeAndValidate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-REGRESSION-TEST" title="TestCases.MTestCase" hash-for-method="verifyPriceProductNameDetailsOnOrderSummeryPopup">verifyPriceProductNameDetailsOnOrderSummeryPopup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-REGRESSION-TEST -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-REGRESSION-TEST" class="panel REGRESSION-TEST">
+          <div class="suite-REGRESSION-TEST-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestCases.MTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAfterEnteringValidCardDetailsPayNowEnabled">
+                  </a> <!-- verifyAfterEnteringValidCardDetailsPayNowEnabled -->
+                  <span class="method-name">verifyAfterEnteringValidCardDetailsPayNowEnabled</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
+	at TestCases.MTestCase.verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(MTestCase.java:131)
+	at TestCases.MTestCase.verifyAfterEnteringValidCardDetailsPayNowEnabled(MTestCase.java:146)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAllPaymentOptionsListOnPaymentPage">
+                  </a> <!-- verifyAllPaymentOptionsListOnPaymentPage -->
+                  <span class="method-name">verifyAllPaymentOptionsListOnPaymentPage</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
+	at TestCases.MTestCase.verifyAllPaymentOptionsListOnPaymentPage(MTestCase.java:111)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCheckOutDetails">
+                  </a> <!-- verifyCheckOutDetails -->
+                  <span class="method-name">verifyCheckOutDetails</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at TestCases.MTestCase.verifyCheckOutDetails(MTestCase.java:57)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnBuyNowRedirectToCheckOutPage">
+                  </a> <!-- verifyClickOnBuyNowRedirectToCheckOutPage -->
+                  <span class="method-name">verifyClickOnBuyNowRedirectToCheckOutPage</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen">
+                  </a> <!-- verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen -->
+                  <span class="method-name">verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
+	at TestCases.MTestCase.verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(MTestCase.java:131)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup">
+                  </a> <!-- verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup -->
+                  <span class="method-name">verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+	at TestCases.MTestCase.verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup(MTestCase.java:82)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickingOnContinueButtonRedirectSelectPaymentPage">
+                  </a> <!-- verifyClickingOnContinueButtonRedirectSelectPaymentPage -->
+                  <span class="method-name">verifyClickingOnContinueButtonRedirectSelectPaymentPage</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails">
+                  </a> <!-- verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails -->
+                  <span class="method-name">verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
+	at TestCases.MTestCase.verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(MTestCase.java:131)
+	at TestCases.MTestCase.verifyAfterEnteringValidCardDetailsPayNowEnabled(MTestCase.java:146)
+	at TestCases.MTestCase.verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails(MTestCase.java:155)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMidTransPillowAddedToCartWith20000">
+                  </a> <!-- verifyMidTransPillowAddedToCartWith20000 -->
+                  <span class="method-name">verifyMidTransPillowAddedToCartWith20000</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at TestCases.MTestCase.verifyMidTransPillowAddedToCartWith20000(MTestCase.java:40)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable">
+                  </a> <!-- verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable -->
+                  <span class="method-name">verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at TestCases.MTestCase.verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable(MTestCase.java:70)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOnClickingCancelButtonRedirectToOrderFailedScreen">
+                  </a> <!-- verifyOnClickingCancelButtonRedirectToOrderFailedScreen -->
+                  <span class="method-name">verifyOnClickingCancelButtonRedirectToOrderFailedScreen</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
+	at TestCases.MTestCase.verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(MTestCase.java:131)
+	at TestCases.MTestCase.verifyAfterEnteringValidCardDetailsPayNowEnabled(MTestCase.java:146)
+	at TestCases.MTestCase.verifyOnClickingCancelButtonRedirectToOrderFailedScreen(MTestCase.java:180)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen">
+                  </a> <!-- verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen -->
+                  <span class="method-name">verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
+	at TestCases.MTestCase.verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(MTestCase.java:131)
+	at TestCases.MTestCase.verifyAfterEnteringValidCardDetailsPayNowEnabled(MTestCase.java:146)
+	at TestCases.MTestCase.verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen(MTestCase.java:172)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen">
+                  </a> <!-- verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen -->
+                  <span class="method-name">verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
+	at TestCases.MTestCase.verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(MTestCase.java:131)
+	at TestCases.MTestCase.verifyAfterEnteringValidCardDetailsPayNowEnabled(MTestCase.java:146)
+	at TestCases.MTestCase.verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen(MTestCase.java:164)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOrderAmountAndApplyCouponCodeAndValidate">
+                  </a> <!-- verifyOrderAmountAndApplyCouponCodeAndValidate -->
+                  <span class="method-name">verifyOrderAmountAndApplyCouponCodeAndValidate</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at TestCases.MTestCase.verifyClickOnBuyNowRedirectToCheckOutPage(MTestCase.java:50)
+	at TestCases.MTestCase.verifyClickingOnContinueButtonRedirectSelectPaymentPage(MTestCase.java:103)
+	at TestCases.MTestCase.verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen(MTestCase.java:131)
+	at TestCases.MTestCase.verifyOrderAmountAndApplyCouponCodeAndValidate(MTestCase.java:138)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceProductNameDetailsOnOrderSummeryPopup">
+                  </a> <!-- verifyPriceProductNameDetailsOnOrderSummeryPopup -->
+                  <span class="method-name">verifyPriceProductNameDetailsOnOrderSummeryPopup</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at TestCases.MTestCase.verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable(MTestCase.java:70)
+	at TestCases.MTestCase.verifyPriceProductNameDetailsOnOrderSummeryPopup(MTestCase.java:90)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-REGRESSION-TEST-class-failed -->
+        </div> <!-- panel REGRESSION-TEST -->
+        <div panel-name="test-xml-REGRESSION-TEST" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\demo\runner.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;REGRESSION-TEST&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;regression&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestCases.MTestCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test --&gt;
+&lt;/suite&gt; &lt;!-- REGRESSION-TEST --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-REGRESSION-TEST" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for REGRESSION-TEST</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-REGRESSION-TEST" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for REGRESSION-TEST</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAfterEnteringValidCardDetailsPayNowEnabled</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAllPaymentOptionsListOnPaymentPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyCheckOutDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyClickOnBuyNowRedirectToCheckOutPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyClickingOnContinueButtonRedirectSelectPaymentPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyMidTransPillowAddedToCartWith20000</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyOnClickingCancelButtonRedirectToOrderFailedScreen</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyOrderAmountAndApplyCouponCodeAndValidate</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyPriceProductNameDetailsOnOrderSummeryPopup</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAfterEnteringValidCardDetailsPayNowEnabled</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyClickOnBuyNowRedirectToCheckOutPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyClickingOnContinueButtonRedirectSelectPaymentPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-REGRESSION-TEST" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for REGRESSION-TEST</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_REGRESSION-TEST');
+function tableData_REGRESSION-TEST() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(15);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyMidTransPillowAddedToCartWith20000')
+data.setCell(0, 2, 'TestCases.MTestCase')
+data.setCell(0, 3, 14);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyAllPaymentOptionsListOnPaymentPage')
+data.setCell(1, 2, 'TestCases.MTestCase')
+data.setCell(1, 3, 1);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen')
+data.setCell(2, 2, 'TestCases.MTestCase')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyOnClickingCancelButtonRedirectToOrderFailedScreen')
+data.setCell(3, 2, 'TestCases.MTestCase')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails')
+data.setCell(4, 2, 'TestCases.MTestCase')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyOrderAmountAndApplyCouponCodeAndValidate')
+data.setCell(5, 2, 'TestCases.MTestCase')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup')
+data.setCell(6, 2, 'TestCases.MTestCase')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyClickingOnContinueButtonRedirectSelectPaymentPage')
+data.setCell(7, 2, 'TestCases.MTestCase')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen')
+data.setCell(8, 2, 'TestCases.MTestCase')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen')
+data.setCell(9, 2, 'TestCases.MTestCase')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyCheckOutDetails')
+data.setCell(10, 2, 'TestCases.MTestCase')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable')
+data.setCell(11, 2, 'TestCases.MTestCase')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyAfterEnteringValidCardDetailsPayNowEnabled')
+data.setCell(12, 2, 'TestCases.MTestCase')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyPriceProductNameDetailsOnOrderSummeryPopup')
+data.setCell(13, 2, 'TestCases.MTestCase')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyClickOnBuyNowRedirectToCheckOutPage')
+data.setCell(14, 2, 'TestCases.MTestCase')
+data.setCell(14, 3, 0);
+window.suiteTableData['REGRESSION-TEST']= { tableData: data, tableDiv: 'times-div-REGRESSION-TEST'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 15 ms</span>
+              <div id="times-div-REGRESSION-TEST">
+              </div> <!-- times-div-REGRESSION-TEST -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-REGRESSION-TEST" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for REGRESSION-TEST</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-REGRESSION-TEST" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-REGRESSION-TEST" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.MTestCase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMidTransPillowAddedToCartWith20000</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyClickOnBuyNowRedirectToCheckOutPage</span>
+                <span class="method-start">33 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyCheckOutDetails</span>
+                <span class="method-start">34 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup</span>
+                <span class="method-start">36 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyPriceProductNameDetailsOnOrderSummeryPopup</span>
+                <span class="method-start">37 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyClickingOnContinueButtonRedirectSelectPaymentPage</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAllPaymentOptionsListOnPaymentPage</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen</span>
+                <span class="method-start">39 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyOrderAmountAndApplyCouponCodeAndValidate</span>
+                <span class="method-start">40 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAfterEnteringValidCardDetailsPayNowEnabled</span>
+                <span class="method-start">41 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails</span>
+                <span class="method-start">42 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen</span>
+                <span class="method-start">43 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen</span>
+                <span class="method-start">44 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyOnClickingCancelButtonRedirectToOrderFailedScreen</span>
+                <span class="method-start">45 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
