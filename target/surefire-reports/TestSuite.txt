@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 15, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 207.474 sec <<< FAILURE! - in TestSuite
-verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails(TestCases.MTestCase)  Time elapsed: 17.412 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at TestCases.MTestCase.verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails(MTestCase.java:159)
-
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 86.423 sec - in TestSuite
