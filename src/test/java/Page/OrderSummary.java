@@ -12,27 +12,27 @@ public class OrderSummary extends HomePage{
     }
 
     @FindBy(xpath = "//p[@class='text-page-title-content']")
-    WebElement OrderSummmaryLogo;
+    private WebElement OrderSummmaryLogo;
     @FindBy(xpath = "//span[text()='order details']")
-    WebElement OrderDetails;
+    private WebElement OrderDetails;
     @FindBy(xpath = "//span[text()='shipping details']")
-    private WebElement ShippingDetails;
+     WebElement ShippingDetails;
     @FindBy(xpath = "//span[text()='Midtrans Pillow']")
-    private WebElement ItemsValue;
+     WebElement ItemsValue;
     @FindBy(xpath = "//td[@class='table-amount text-body']")
     WebElement AmountValue;
     @FindBy(xpath = "//div[@class='content-text-block']")
-    private WebElement ShippingDetailsContainer;
+     WebElement ShippingDetailsContainer;
     @FindBy(xpath = "//div[text()='Bhushan Verma']")
-    private WebElement NameValue;
+    WebElement NameValue;
     @FindBy(xpath = "//div[text()='test@gmail.com']")
-    private WebElement EmailValue;
+     WebElement EmailValue;
     @FindBy(xpath = "//div[text()='1111111111']")
-    private WebElement Phonevalue;
+     WebElement Phonevalue;
     @FindBy(xpath = "//div[text()='H No 180 Street no 5A Mowa Raipur 492002']")
-    private WebElement AddressValue;
+     WebElement AddressValue;
     @FindBy(xpath = "//a[@class='button-main-content']")
-    private WebElement ContinueButton;
+     WebElement ContinueButton;
 
     public boolean verifyOrderSummaryLogoVisible()
     {

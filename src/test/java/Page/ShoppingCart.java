@@ -12,25 +12,25 @@ public class ShoppingCart extends BasePage{
     }
 
     @FindBy(xpath = "//span[@data-reactid='.0.0.1.0.0.0']")
-    WebElement CheckoutLogo;
+    private WebElement CheckoutLogo;
     @FindBy(xpath = "//td[@data-reactid='.0.0.1.0.1.0.1.0:$1.0']")
-    WebElement Midtrans;
+    private WebElement Midtrans;
     @FindBy(xpath = "//td[@data-reactid='.0.0.1.0.1.0.1.1.2']")
-    WebElement PillowPrice;
+    private WebElement PillowPrice;
     @FindBy(xpath = "//input[@data-reactid='.0.0.1.0.3.0.0.0.1.0']")
-    WebElement NameInput;
+    private WebElement NameInput;
     @FindBy(xpath = "//input[@data-reactid='.0.0.1.0.3.0.0.1.1.0']")
-    WebElement EmailInput;
+    private WebElement EmailInput;
     @FindBy(xpath = "//input[@data-reactid='.0.0.1.0.3.0.0.2.1.0']")
-    WebElement PhoneInput;
+    private WebElement PhoneInput;
     @FindBy(xpath = "//input[@data-reactid='.0.0.1.0.3.0.0.3.1.0']")
-    WebElement CityInput;
+    private WebElement CityInput;
     @FindBy(xpath = "//textarea[@data-reactid='.0.0.1.0.3.0.0.4.1.0']")
-    WebElement AddressInput;
+    private WebElement AddressInput;
     @FindBy(xpath = "//input[@data-reactid='.0.0.1.0.3.0.0.5.1.0']")
-    WebElement PostalCodeInput;
+    private WebElement PostalCodeInput;
     @FindBy(xpath = "//div[@data-reactid='.0.0.1.1.0']")
-    WebElement CheckOutButton;
+    private WebElement CheckOutButton;
     private String ShoppingCartAttribute = "//td[@class='input-label']";
 
     public boolean checkoutlogovisible()
