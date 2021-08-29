@@ -1,14 +1,10 @@
 package Page;
 
-import org.apache.commons.exec.ExecuteWatchdog;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 public class CreditDebitCard extends BasePage{
@@ -35,34 +31,30 @@ public class CreditDebitCard extends BasePage{
     private WebElement FailedMessage;
     @FindBy(xpath = "//button[@name='cancel']")
     private WebElement CancelButton;
+    private String DiscountCheckBox = "//input[@name='promo']";
 
 
     public boolean verifyCreditDebitCardLogoVisible()
     {
-        boolean Flag = CreditDebitCardLogo.isDisplayed();
+        boolean Flag = wait(CreditDebitCardLogo).isDisplayed();
         return Flag;
-    }
-    public WebElement getdiscountoption(int index)
-    {
-        List<WebElement> Options = DiscountOption.findElements(By.xpath("//input[@name='promo']"));
-        return Options.get(index);
     }
 
     public boolean verifyON10PercentDiscount()
     {
-        click(getdiscountoption(1));
+        click(listHolder(1 , DiscountCheckBox));
         boolean Flag = (AmountValue.getText()).contains(properties.getProperty("10PercentDiscount"));
         return Flag;
     }
     public boolean verifyOnPotongan10Rupiah()
     {
-        click(getdiscountoption(0));
+        click(listHolder(0 , DiscountCheckBox));
         boolean Flag = (AmountValue.getText()).contains(properties.getProperty("Potongan10Rupiah"));
         return Flag;
     }
     public boolean verifyDemoMasterCard()
     {
-        click(getdiscountoption(2));
+        click(listHolder(2 , DiscountCheckBox));
         boolean Flag = (AmountValue.getText()).contains(properties.getProperty("DemoMasterCard"));
         return Flag;
     }
@@ -121,7 +113,6 @@ public class CreditDebitCard extends BasePage{
     }
     public boolean failedScreenDiplayed()
     {
-        holdExecutionForSeconds(3);
         frameSwitchTo(0);
         boolean Flag = FailedMessage.isDisplayed();
         return Flag;

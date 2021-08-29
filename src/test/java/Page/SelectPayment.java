@@ -15,7 +15,7 @@ public class SelectPayment extends HomePage{
         PageFactory.initElements(driver , this);
     }
     @FindBy(xpath = "//p[@class='text-page-title-content']")
-    private WebElement SelectPaymentLogo;
+     private WebElement SelectPaymentLogo;
     @FindBy(xpath = "//span[text()='promo']")
     private WebElement ClickOnCreditDebitCardPromo;
     private String PayMentList = "//div[@class='list-title text-actionable-bold']";

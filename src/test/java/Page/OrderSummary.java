@@ -16,40 +16,32 @@ public class OrderSummary extends HomePage{
     @FindBy(xpath = "//span[text()='order details']")
     private WebElement OrderDetails;
     @FindBy(xpath = "//span[text()='shipping details']")
-     WebElement ShippingDetails;
+    private WebElement ShippingDetails;
     @FindBy(xpath = "//span[text()='Midtrans Pillow']")
-     WebElement ItemsValue;
+    private WebElement ItemsValue;
     @FindBy(xpath = "//td[@class='table-amount text-body']")
-    WebElement AmountValue;
+    private WebElement AmountValue;
     @FindBy(xpath = "//div[@class='content-text-block']")
-     WebElement ShippingDetailsContainer;
-    @FindBy(xpath = "//div[text()='Bhushan Verma']")
-    WebElement NameValue;
-    @FindBy(xpath = "//div[text()='test@gmail.com']")
-     WebElement EmailValue;
-    @FindBy(xpath = "//div[text()='1111111111']")
-     WebElement Phonevalue;
-    @FindBy(xpath = "//div[text()='H No 180 Street no 5A Mowa Raipur 492002']")
-     WebElement AddressValue;
+    private WebElement ShippingDetailsContainer;
     @FindBy(xpath = "//a[@class='button-main-content']")
-     WebElement ContinueButton;
+    private WebElement ContinueButton;
 
     public boolean verifyOrderSummaryLogoVisible()
     {
-        //frameSwitchTo(0);
         boolean Flag =  wait(OrderSummmaryLogo).isDisplayed();
         return Flag;
     }
-    public void clickOnOrderDetails(){click(OrderDetails);}
-    public void clickOnShippingDetails(){click(ShippingDetails);holdExecutionForSeconds(2);}
+    public void clickOnShippingDetails(){click(ShippingDetails);
+        //holdExecutionForSeconds(2);
+        }
     public boolean verifyAmountValueDetails()
     {
-        boolean Flag = (AmountValue.getText()).contains(properties.getProperty("Cost"));
+        boolean Flag = (wait(AmountValue).getText()).contains(properties.getProperty("Cost"));
         return Flag;
     }
     public boolean verifyItemName()
     {
-        boolean Flag = (ItemsValue.getText()).contains(properties.getProperty("PillowName"));
+        boolean Flag = (wait(ItemsValue).getText()).contains(properties.getProperty("PillowName"));
         return Flag;
     }
     public boolean verifyShippingDetailsName()
