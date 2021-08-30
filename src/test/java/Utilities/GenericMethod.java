@@ -2,6 +2,7 @@ package Utilities;
 
 import SetupPack.Setup;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchWindowException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -50,8 +51,8 @@ public class GenericMethod extends Setup {
         //Method to Switch frame
         public void frameSwitchTo(int index)
         {
-            holdExecutionForSeconds(5);
-            driver.switchTo().frame(index);
+           holdExecutionForSeconds(5);
+           driver.switchTo().frame(index);
         }
         //Method to find WebElement from list
         public WebElement listHolder(int index , String xpath) {

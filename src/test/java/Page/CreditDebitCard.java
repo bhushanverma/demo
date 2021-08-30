@@ -1,11 +1,13 @@
 package Page;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchWindowException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import java.util.List;
+import java.util.Set;
 
 public class CreditDebitCard extends BasePage{
     public CreditDebitCard(WebDriver driver1)
@@ -32,6 +34,8 @@ public class CreditDebitCard extends BasePage{
     @FindBy(xpath = "//button[@name='cancel']")
     private WebElement CancelButton;
     private String DiscountCheckBox = "//input[@name='promo']";
+    @FindBy(xpath = "//a[@class='button-main-content']")
+    WebElement UseAnotherPaymentOptionButton;
 
 
     public boolean verifyCreditDebitCardLogoVisible()
@@ -72,10 +76,12 @@ public class CreditDebitCard extends BasePage{
     }
     public void clickOnPayNow()
     {
-      click(PayNowButton);
-      holdExecutionForSeconds(10);
-      frameSwitchTo(0);
+        click(PayNowButton);
+        holdExecutionForSeconds(5);
+        frameSwitchTo(0);
+        System.out.println("frame switch to Transaction details page");
     }
+
     public boolean verifyMerchantName()
     {
 
@@ -90,10 +96,6 @@ public class CreditDebitCard extends BasePage{
     }
     public boolean verifyTransactionTime()
     {
-        String s = currentTime();
-        System.out.println(s);
-        String s1 = (listHolder(2 ,MerchantDetails).getText().substring(0,12));
-        System.out.println(s1);
         boolean Flag = (listHolder(2 ,MerchantDetails).getText().substring(0,12)).contains(currentTime());
         if(Flag == true) {
             return Flag;
@@ -115,15 +117,17 @@ public class CreditDebitCard extends BasePage{
     public void clickOnOKButton()
     {
         click(OKButton);
-        holdExecutionForSeconds(10);
+        holdExecutionForSeconds(5);
+        System.out.println("clicked on OK button");
     }
     public void enterInValidOTP()
     {
         enterText((InputOTP), properties.getProperty("InvalidOTP"));
+        System.out.println("entered invalid otp");
     }
     public boolean failedScreenDiplayed()
     {
-        frameSwitchTo(0);
+       frameSwitchTo(0);
         boolean Flag = FailedMessage.isDisplayed();
         return Flag;
     }

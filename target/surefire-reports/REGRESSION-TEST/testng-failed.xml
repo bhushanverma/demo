@@ -11,8 +11,6 @@
     <classes>
       <class name="TestCases.MTestCase">
         <methods>
-          <include name="verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen"/>
-          <include name="verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails"/>
           <include name="launchWebsite"/>
           <include name="verifyOnClickingCancelButtonRedirectToOrderFailedScreen"/>
           <include name="verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen"/>

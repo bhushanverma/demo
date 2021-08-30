@@ -31,6 +31,7 @@ public class HomePage extends BasePage {
     }
     public boolean successMessageVisible()
     {
+        driver.switchTo().defaultContent();
        boolean Flag =  wait(SuccessMessage).isDisplayed();
        return Flag;
     }
