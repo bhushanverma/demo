@@ -71,6 +71,7 @@ public class CreditDebitCard extends BasePage{
         enterText(listHolder(1 , CardDetailsListPath) , (properties.getProperty("CardExpiryDate")));
     }
     public void enterCVV()
+
     {
         enterText(listHolder(2 , CardDetailsListPath) , (properties.getProperty("CardCVV")));
     }
@@ -79,15 +80,12 @@ public class CreditDebitCard extends BasePage{
         click(PayNowButton);
         holdExecutionForSeconds(5);
         frameSwitchTo(0);
-        System.out.println("frame switch to Transaction details page");
     }
 
     public boolean verifyMerchantName()
     {
-
         boolean Flag = (listHolder(0 , MerchantDetails).getText()).contains(properties.getProperty("MerchantName"));
         return Flag;
-
     }
     public boolean verifyAmount()
     {
@@ -97,13 +95,7 @@ public class CreditDebitCard extends BasePage{
     public boolean verifyTransactionTime()
     {
         boolean Flag = (listHolder(2 ,MerchantDetails).getText().substring(0,12)).contains(currentTime());
-        if(Flag == true) {
-            return Flag;
-        }else
-        {
-            boolean Flag1 = ((currentTime().contains(listHolder(2 ,MerchantDetails).getText().substring(4,12))));
-            return Flag1;
-        }
+        return Flag;
     }
     public boolean verifyCardNumber()
     {
@@ -118,7 +110,6 @@ public class CreditDebitCard extends BasePage{
     {
         click(OKButton);
         holdExecutionForSeconds(5);
-        System.out.println("clicked on OK button");
     }
     public void enterInValidOTP()
     {
@@ -127,7 +118,7 @@ public class CreditDebitCard extends BasePage{
     }
     public boolean failedScreenDiplayed()
     {
-       frameSwitchTo(0);
+        frameSwitchTo(0);
         boolean Flag = FailedMessage.isDisplayed();
         return Flag;
     }

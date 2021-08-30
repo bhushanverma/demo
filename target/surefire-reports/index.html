@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-REGRESSION-TEST">
-              <span class="suite-name border-failed">REGRESSION-TEST</span>
+              <span class="suite-name border-passed">REGRESSION-TEST</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,26 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods, 2 failed,   13 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-REGRESSION-TEST" class="hide-methods failed suite-REGRESSION-TEST"> (hide)</a> <!-- hide-methods failed suite-REGRESSION-TEST -->
-                      <a href="#" panel-name="suite-REGRESSION-TEST" class="show-methods failed suite-REGRESSION-TEST"> (show)</a> <!-- show-methods failed suite-REGRESSION-TEST -->
-                    </span>
-                    <div class="method-list-content failed suite-REGRESSION-TEST">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-REGRESSION-TEST" title="TestCases.MTestCase" hash-for-method="verifyOnClickingCancelButtonRedirectToOrderFailedScreen">verifyOnClickingCancelButtonRedirectToOrderFailedScreen</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-REGRESSION-TEST" title="TestCases.MTestCase" hash-for-method="verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen">verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-REGRESSION-TEST -->
+                    <span class="method-stats">15 methods,   15 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -171,6 +152,16 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-REGRESSION-TEST" title="TestCases.MTestCase" hash-for-method="verifyOnClickingCancelButtonRedirectToOrderFailedScreen">verifyOnClickingCancelButtonRedirectToOrderFailedScreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-REGRESSION-TEST" title="TestCases.MTestCase" hash-for-method="verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen">verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-REGRESSION-TEST" title="TestCases.MTestCase" hash-for-method="verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen">verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -196,64 +187,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-REGRESSION-TEST" class="panel REGRESSION-TEST">
-          <div class="suite-REGRESSION-TEST-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">TestCases.MTestCase</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyOnClickingCancelButtonRedirectToOrderFailedScreen">
-                  </a> <!-- verifyOnClickingCancelButtonRedirectToOrderFailedScreen -->
-                  <span class="method-name">verifyOnClickingCancelButtonRedirectToOrderFailedScreen</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;BHUSHANVERMA-PR&apos;, ip: &apos;192.168.43.116&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210823123856, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 12260, moz:profile: C:\Users\Bhushan Verma\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8aedc28a-99db-4d4a-9dc7-d8bb5d936dbf
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:872)
-	at Utilities.GenericMethod.frameSwitchTo(GenericMethod.java:55)
-	at Page.CreditDebitCard.failedScreenDiplayed(CreditDebitCard.java:130)
-	at TestCases.MTestCase.verifyOnClickingCancelButtonRedirectToOrderFailedScreen(MTestCase.java:182)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen">
-                  </a> <!-- verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen -->
-                  <span class="method-name">verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;BHUSHANVERMA-PR&apos;, ip: &apos;192.168.43.116&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210823123856, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 12260, moz:profile: C:\Users\Bhushan Verma\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8aedc28a-99db-4d4a-9dc7-d8bb5d936dbf
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:872)
-	at Utilities.GenericMethod.frameSwitchTo(GenericMethod.java:55)
-	at Page.CreditDebitCard.failedScreenDiplayed(CreditDebitCard.java:130)
-	at TestCases.MTestCase.verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen(MTestCase.java:175)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-REGRESSION-TEST-class-failed -->
           <div class="suite-REGRESSION-TEST-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -328,6 +261,20 @@ Session ID: 8aedc28a-99db-4d4a-9dc7-d8bb5d936dbf
                   <a name="verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable">
                   </a> <!-- verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable -->
                   <span class="method-name">verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOnClickingCancelButtonRedirectToOrderFailedScreen">
+                  </a> <!-- verifyOnClickingCancelButtonRedirectToOrderFailedScreen -->
+                  <span class="method-name">verifyOnClickingCancelButtonRedirectToOrderFailedScreen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen">
+                  </a> <!-- verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen -->
+                  <span class="method-name">verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -507,63 +454,63 @@ data.addRows(15);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen')
 data.setCell(0, 2, 'TestCases.MTestCase')
-data.setCell(0, 3, 29859);
+data.setCell(0, 3, 30471);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen')
 data.setCell(1, 2, 'TestCases.MTestCase')
-data.setCell(1, 3, 26178);
+data.setCell(1, 3, 26279);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyOnClickingCancelButtonRedirectToOrderFailedScreen')
 data.setCell(2, 2, 'TestCases.MTestCase')
-data.setCell(2, 3, 24928);
+data.setCell(2, 3, 24982);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails')
 data.setCell(3, 2, 'TestCases.MTestCase')
-data.setCell(3, 3, 19118);
+data.setCell(3, 3, 18911);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verifyAfterEnteringValidCardDetailsPayNowEnabled')
 data.setCell(4, 2, 'TestCases.MTestCase')
-data.setCell(4, 3, 18378);
+data.setCell(4, 3, 18489);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'verifyPriceProductNameDetailsOnOrderSummeryPopup')
 data.setCell(5, 2, 'TestCases.MTestCase')
-data.setCell(5, 3, 8894);
+data.setCell(5, 3, 9920);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verifyOrderAmountAndApplyCouponCodeAndValidate')
 data.setCell(6, 2, 'TestCases.MTestCase')
-data.setCell(6, 3, 8577);
+data.setCell(6, 3, 8432);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen')
+data.setCell(7, 1, 'verifyAllPaymentOptionsListOnPaymentPage')
 data.setCell(7, 2, 'TestCases.MTestCase')
-data.setCell(7, 3, 7275);
+data.setCell(7, 3, 7388);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyAllPaymentOptionsListOnPaymentPage')
+data.setCell(8, 1, 'verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen')
 data.setCell(8, 2, 'TestCases.MTestCase')
-data.setCell(8, 3, 7107);
+data.setCell(8, 3, 7326);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'verifyClickingOnContinueButtonRedirectSelectPaymentPage')
 data.setCell(9, 2, 'TestCases.MTestCase')
-data.setCell(9, 3, 6425);
+data.setCell(9, 3, 6415);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup')
 data.setCell(10, 2, 'TestCases.MTestCase')
-data.setCell(10, 3, 6092);
+data.setCell(10, 3, 6104);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable')
 data.setCell(11, 2, 'TestCases.MTestCase')
-data.setCell(11, 3, 1937);
+data.setCell(11, 3, 2596);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verifyCheckOutDetails')
+data.setCell(12, 1, 'verifyMidTransPillowAddedToCartWith20000')
 data.setCell(12, 2, 'TestCases.MTestCase')
-data.setCell(12, 3, 761);
+data.setCell(12, 3, 632);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'verifyClickOnBuyNowRedirectToCheckOutPage')
 data.setCell(13, 2, 'TestCases.MTestCase')
-data.setCell(13, 3, 598);
+data.setCell(13, 3, 457);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'verifyMidTransPillowAddedToCartWith20000')
+data.setCell(14, 1, 'verifyCheckOutDetails')
 data.setCell(14, 2, 'TestCases.MTestCase')
-data.setCell(14, 3, 582);
+data.setCell(14, 3, 370);
 window.suiteTableData['REGRESSION-TEST']= { tableData: data, tableDiv: 'times-div-REGRESSION-TEST'}
 return data;
 }
@@ -601,131 +548,127 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">launchWebsite</span>
-                <span class="method-start">5140 ms</span>
+                <span class="method-start">2380 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyMidTransPillowAddedToCartWith20000</span>
-                <span class="method-start">14468 ms</span>
+                <span class="method-start">5997 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">launchWebsite</span>
-                <span class="method-start">15053 ms</span>
+                <span class="method-start">6634 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyClickOnBuyNowRedirectToCheckOutPage</span>
-                <span class="method-start">18109 ms</span>
+                <span class="method-start">9216 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">launchWebsite</span>
-                <span class="method-start">18709 ms</span>
+                <span class="method-start">9674 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyCheckOutDetails</span>
-                <span class="method-start">21544 ms</span>
+                <span class="method-start">12191 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">launchWebsite</span>
-                <span class="method-start">22305 ms</span>
+                <span class="method-start">12561 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable</span>
-                <span class="method-start">24675 ms</span>
+                <span class="method-start">14692 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">launchWebsite</span>
-                <span class="method-start">26613 ms</span>
+                <span class="method-start">17289 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup</span>
-                <span class="method-start">29335 ms</span>
+                <span class="method-start">19583 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">launchWebsite</span>
-                <span class="method-start">35427 ms</span>
+                <span class="method-start">25687 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyPriceProductNameDetailsOnOrderSummeryPopup</span>
-                <span class="method-start">38487 ms</span>
+                <span class="method-start">28241 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">launchWebsite</span>
-                <span class="method-start">47382 ms</span>
+                <span class="method-start">38161 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyClickingOnContinueButtonRedirectSelectPaymentPage</span>
-                <span class="method-start">50226 ms</span>
+                <span class="method-start">40431 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">launchWebsite</span>
-                <span class="method-start">56651 ms</span>
+                <span class="method-start">46846 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAllPaymentOptionsListOnPaymentPage</span>
-                <span class="method-start">59610 ms</span>
+                <span class="method-start">49050 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">launchWebsite</span>
-                <span class="method-start">66720 ms</span>
+                <span class="method-start">56438 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen</span>
-                <span class="method-start">69156 ms</span>
+                <span class="method-start">58831 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">launchWebsite</span>
-                <span class="method-start">76432 ms</span>
+                <span class="method-start">66158 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyOrderAmountAndApplyCouponCodeAndValidate</span>
-                <span class="method-start">78693 ms</span>
+                <span class="method-start">68450 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">launchWebsite</span>
-                <span class="method-start">87271 ms</span>
+                <span class="method-start">76882 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAfterEnteringValidCardDetailsPayNowEnabled</span>
-                <span class="method-start">89766 ms</span>
+                <span class="method-start">79312 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">launchWebsite</span>
-                <span class="method-start">108144 ms</span>
+                <span class="method-start">97801 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails</span>
-                <span class="method-start">111335 ms</span>
+                <span class="method-start">100279 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">launchWebsite</span>
-                <span class="method-start">130455 ms</span>
+                <span class="method-start">119190 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen</span>
-                <span class="method-start">133400 ms</span>
+                <span class="method-start">121704 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">launchWebsite</span>
-                <span class="method-start">159578 ms</span>
+                <span class="method-start">147984 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen</span>
-                <span class="method-start">162430 ms</span>
+                <span class="method-start">150330 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">launchWebsite</span>
-                <span class="method-start">192320 ms</span>
+                <span class="method-start">180802 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyOnClickingCancelButtonRedirectToOrderFailedScreen</span>
-                <span class="method-start">195189 ms</span>
+                <span class="method-start">183427 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">220117 ms</span>
+                <span class="method-start">208409 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

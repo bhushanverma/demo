@@ -1,24 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 15, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 221.618 sec <<< FAILURE! - in TestSuite
-verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen(TestCases.MTestCase)  Time elapsed: 29.89 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchWindowException: 
-Browsing context has been discarded
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'BHUSHANVERMA-PR', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210823123856, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 12260, moz:profile: C:\Users\Bhushan Verma\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8aedc28a-99db-4d4a-9dc7-d8bb5d936dbf
-	at TestCases.MTestCase.verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen(MTestCase.java:175)
-
-verifyOnClickingCancelButtonRedirectToOrderFailedScreen(TestCases.MTestCase)  Time elapsed: 24.928 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchWindowException: 
-Browsing context has been discarded
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'BHUSHANVERMA-PR', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210823123856, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 12260, moz:profile: C:\Users\Bhushan Verma\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8aedc28a-99db-4d4a-9dc7-d8bb5d936dbf
-	at TestCases.MTestCase.verifyOnClickingCancelButtonRedirectToOrderFailedScreen(MTestCase.java:182)
-
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 209.76 sec - in TestSuite

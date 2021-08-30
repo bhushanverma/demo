@@ -19,11 +19,13 @@ public class GenericMethod extends Setup {
             e.printStackTrace();
         }
         }
+
         //Method for wait till visibility of element
         public WebElement wait(WebElement element)
         {
             return wait.until(ExpectedConditions.visibilityOf(element));
         }
+
         //Method to click element
         public void click(WebElement element)
         {
@@ -35,6 +37,7 @@ public class GenericMethod extends Setup {
                 element.click();
             }
         }
+
         //method to enter text
         public void enterText(WebElement element,String Text)
         {
@@ -48,12 +51,26 @@ public class GenericMethod extends Setup {
                 element.sendKeys(Text);
             }
         }
+
         //Method to Switch frame
         public void frameSwitchTo(int index)
         {
            holdExecutionForSeconds(5);
-           driver.switchTo().frame(index);
+           try {
+               driver.switchTo().frame(index);
+           }catch (NoSuchWindowException e)
+           {
+               driver.switchTo().window(driver.getWindowHandle());
+               driver.switchTo().frame(index);
+           }
         }
+
+        //Method to brinf focus to defaultContent
+        public void switchDefaultContent()
+        {
+            driver.switchTo().defaultContent();
+        }
+
         //Method to find WebElement from list
         public WebElement listHolder(int index , String xpath) {
         try {
@@ -75,10 +92,12 @@ public class GenericMethod extends Setup {
                 DateTimeFormatter dtf = DateTimeFormatter.ofPattern("M/dd/yyyy h:");
                 LocalDateTime now = LocalDateTime.now();
                 return dtf.format(now);
+
             }else if(System.getProperty("webdriver.gecko.driver") == "geckodriver.exe") {
                 DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/M/yyyy h:");
                 LocalDateTime now = LocalDateTime.now();
                 return dtf.format(now);
+
             }else
             {
                 System.out.println("else condition");

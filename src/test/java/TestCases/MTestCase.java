@@ -19,7 +19,7 @@ public class MTestCase {
 
     @BeforeClass(groups = {"Req"})
     public void tearUp() {
-        driver = Setup.LaunchBrowser("firefox");
+        driver = Setup.LaunchBrowser("chrome");
         homePage = new HomePage(driver);
         shoppingCart = new ShoppingCart(driver);
         orderSummary  = new OrderSummary(driver);
@@ -128,9 +128,9 @@ public class MTestCase {
     @Test(priority = 9 , groups = {"regression" , "smoke"})
     public void verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen()
     {
-      verifyClickingOnContinueButtonRedirectSelectPaymentPage();
-      selectPayment.clickOnCreditDebitCardPromo();
-      Assert.assertTrue(creditDebitCard.verifyCreditDebitCardLogoVisible());
+        verifyClickingOnContinueButtonRedirectSelectPaymentPage();
+        selectPayment.clickOnCreditDebitCardPromo();
+        Assert.assertTrue(creditDebitCard.verifyCreditDebitCardLogoVisible());
     }
     @Test(priority = 10 , groups = {"regression"})
     public void verifyOrderAmountAndApplyCouponCodeAndValidate()
