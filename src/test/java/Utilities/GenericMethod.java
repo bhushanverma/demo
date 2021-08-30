@@ -50,20 +50,26 @@ public class GenericMethod extends Setup {
         //Method to Switch frame
         public void frameSwitchTo(int index)
         {
-            holdExecutionForSeconds(2);
+            holdExecutionForSeconds(5);
             driver.switchTo().frame(index);
         }
         //Method to find WebElement from list
         public WebElement listHolder(int index , String xpath) {
-
-        List<WebElement> Options = driver.findElements(By.xpath(xpath));
-        return Options.get(index);
+        try {
+            List<WebElement> Options = driver.findElements(By.xpath(xpath));
+            return Options.get(index);
+        }catch (IndexOutOfBoundsException e)
+        {
+            holdExecutionForSeconds(10);
+            List<WebElement> Options = driver.findElements(By.xpath(xpath));
+            return Options.get(index);
+        }
 
         }
         //Method to find current Time
         public String currentTime()
         {
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("M/dd/yyyy h:mm");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("M/dd/yyyy h:");
         LocalDateTime now = LocalDateTime.now();
         return dtf.format(now);
         }

@@ -90,8 +90,18 @@ public class CreditDebitCard extends BasePage{
     }
     public boolean verifyTransactionTime()
     {
-        boolean Flag = (listHolder(2 ,MerchantDetails).getText().substring(0,14)).contains(currentTime());
-        return Flag;
+        String s = currentTime();
+        System.out.println(s);
+        String s1 = (listHolder(2 ,MerchantDetails).getText().substring(0,12));
+        System.out.println(s1);
+        boolean Flag = (listHolder(2 ,MerchantDetails).getText().substring(0,12)).contains(currentTime());
+        if(Flag == true) {
+            return Flag;
+        }else
+        {
+            boolean Flag1 = ((currentTime().contains(listHolder(2 ,MerchantDetails).getText().substring(4,12))));
+            return Flag1;
+        }
     }
     public boolean verifyCardNumber()
     {
