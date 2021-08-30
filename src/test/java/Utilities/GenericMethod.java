@@ -69,6 +69,19 @@ public class GenericMethod extends Setup {
         //Method to find current Time
         public String currentTime()
         {
+            if(System.getProperty("webdriver.chrome.driver") == "chromedriver.exe")
+            {
+                DateTimeFormatter dtf = DateTimeFormatter.ofPattern("M/dd/yyyy h:");
+                LocalDateTime now = LocalDateTime.now();
+                return dtf.format(now);
+            }else if(System.getProperty("webdriver.gecko.driver") == "geckodriver.exe") {
+                DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/M/yyyy h:");
+                LocalDateTime now = LocalDateTime.now();
+                return dtf.format(now);
+            }else
+            {
+                System.out.println("else condition");
+            }
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("M/dd/yyyy h:");
         LocalDateTime now = LocalDateTime.now();
         return dtf.format(now);
