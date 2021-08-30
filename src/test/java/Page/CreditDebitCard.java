@@ -94,7 +94,7 @@ public class CreditDebitCard extends BasePage{
     }
     public boolean verifyTransactionTime()
     {
-        boolean Flag = (listHolder(2 ,MerchantDetails).getText().substring(0,12)).contains(currentTime());
+        boolean Flag = (listHolder(2 ,MerchantDetails).getText()).contains(currentTime());
         return Flag;
     }
     public boolean verifyCardNumber()
