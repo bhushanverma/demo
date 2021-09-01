@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="0" total="15" passed="15">
   <reporter-output>
   </reporter-output>
-  <suite name="REGRESSION-TEST" duration-ms="245207" started-at="2021-08-30T15:58:05Z" finished-at="2021-08-30T16:02:11Z">
+  <suite name="REGRESSION-TEST" duration-ms="215505" started-at="2021-09-01T16:38:04Z" finished-at="2021-09-01T16:41:40Z">
     <groups>
       <group name="regression">
         <method signature="MTestCase.verifyAfterEnteringValidCardDetailsPayNowEnabled()[pri:11, instance:TestCases.MTestCase@17f6480]" name="verifyAfterEnteringValidCardDetailsPayNowEnabled" class="TestCases.MTestCase"/>
@@ -30,133 +30,133 @@
         <method signature="MTestCase.verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen()[pri:13, instance:TestCases.MTestCase@17f6480]" name="verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen" class="TestCases.MTestCase"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="test" duration-ms="245207" started-at="2021-08-30T15:58:05Z" finished-at="2021-08-30T16:02:11Z">
+    <test name="test" duration-ms="215505" started-at="2021-09-01T16:38:04Z" finished-at="2021-09-01T16:41:40Z">
       <class name="TestCases.MTestCase">
-        <test-method status="PASS" signature="tearUp()[pri:0, instance:TestCases.MTestCase@17f6480]" name="tearUp" is-config="true" duration-ms="2257" started-at="2021-08-30T15:58:05Z" finished-at="2021-08-30T15:58:08Z">
+        <test-method status="PASS" signature="tearUp()[pri:0, instance:TestCases.MTestCase@17f6480]" name="tearUp" is-config="true" duration-ms="7220" started-at="2021-09-01T16:38:04Z" finished-at="2021-09-01T16:38:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
-        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="10999" started-at="2021-08-30T15:58:08Z" finished-at="2021-08-30T15:58:19Z">
+        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="3899" started-at="2021-09-01T16:38:11Z" finished-at="2021-09-01T16:38:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebsite -->
-        <test-method status="PASS" signature="verifyMidTransPillowAddedToCartWith20000()[pri:1, instance:TestCases.MTestCase@17f6480]" name="verifyMidTransPillowAddedToCartWith20000" duration-ms="702" started-at="2021-08-30T15:58:19Z" finished-at="2021-08-30T15:58:19Z">
+        <test-method status="PASS" signature="verifyMidTransPillowAddedToCartWith20000()[pri:1, instance:TestCases.MTestCase@17f6480]" name="verifyMidTransPillowAddedToCartWith20000" duration-ms="666" started-at="2021-09-01T16:38:15Z" finished-at="2021-09-01T16:38:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMidTransPillowAddedToCartWith20000 -->
-        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="3486" started-at="2021-08-30T15:58:19Z" finished-at="2021-08-30T15:58:23Z">
+        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="2738" started-at="2021-09-01T16:38:16Z" finished-at="2021-09-01T16:38:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebsite -->
-        <test-method status="PASS" signature="verifyClickOnBuyNowRedirectToCheckOutPage()[pri:2, instance:TestCases.MTestCase@17f6480]" name="verifyClickOnBuyNowRedirectToCheckOutPage" duration-ms="192" started-at="2021-08-30T15:58:23Z" finished-at="2021-08-30T15:58:23Z">
+        <test-method status="PASS" signature="verifyClickOnBuyNowRedirectToCheckOutPage()[pri:2, instance:TestCases.MTestCase@17f6480]" name="verifyClickOnBuyNowRedirectToCheckOutPage" duration-ms="583" started-at="2021-09-01T16:38:19Z" finished-at="2021-09-01T16:38:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyClickOnBuyNowRedirectToCheckOutPage -->
-        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="4452" started-at="2021-08-30T15:58:23Z" finished-at="2021-08-30T15:58:27Z">
+        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="2569" started-at="2021-09-01T16:38:19Z" finished-at="2021-09-01T16:38:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebsite -->
-        <test-method status="PASS" signature="verifyCheckOutDetails()[pri:3, instance:TestCases.MTestCase@17f6480]" name="verifyCheckOutDetails" duration-ms="998" started-at="2021-08-30T15:58:27Z" finished-at="2021-08-30T15:58:28Z">
+        <test-method status="PASS" signature="verifyCheckOutDetails()[pri:3, instance:TestCases.MTestCase@17f6480]" name="verifyCheckOutDetails" duration-ms="757" started-at="2021-09-01T16:38:22Z" finished-at="2021-09-01T16:38:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCheckOutDetails -->
-        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="4526" started-at="2021-08-30T15:58:28Z" finished-at="2021-08-30T15:58:33Z">
+        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="2530" started-at="2021-09-01T16:38:22Z" finished-at="2021-09-01T16:38:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebsite -->
-        <test-method status="PASS" signature="verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable()[pri:4, instance:TestCases.MTestCase@17f6480]" name="verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable" duration-ms="3827" started-at="2021-08-30T15:58:33Z" finished-at="2021-08-30T15:58:37Z">
+        <test-method status="PASS" signature="verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable()[pri:4, instance:TestCases.MTestCase@17f6480]" name="verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable" duration-ms="2432" started-at="2021-09-01T16:38:25Z" finished-at="2021-09-01T16:38:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable -->
-        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="4537" started-at="2021-08-30T15:58:37Z" finished-at="2021-08-30T15:58:41Z">
+        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="2566" started-at="2021-09-01T16:38:27Z" finished-at="2021-09-01T16:38:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebsite -->
-        <test-method status="PASS" signature="verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup()[pri:5, instance:TestCases.MTestCase@17f6480]" name="verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup" duration-ms="5951" started-at="2021-08-30T15:58:41Z" finished-at="2021-08-30T15:58:47Z">
+        <test-method status="PASS" signature="verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup()[pri:5, instance:TestCases.MTestCase@17f6480]" name="verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup" duration-ms="6063" started-at="2021-09-01T16:38:30Z" finished-at="2021-09-01T16:38:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup -->
-        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="3946" started-at="2021-08-30T15:58:47Z" finished-at="2021-08-30T15:58:51Z">
+        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="2873" started-at="2021-09-01T16:38:36Z" finished-at="2021-09-01T16:38:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebsite -->
-        <test-method status="PASS" signature="verifyPriceProductNameDetailsOnOrderSummeryPopup()[pri:6, instance:TestCases.MTestCase@17f6480]" name="verifyPriceProductNameDetailsOnOrderSummeryPopup" duration-ms="10221" started-at="2021-08-30T15:58:51Z" finished-at="2021-08-30T15:59:01Z">
+        <test-method status="PASS" signature="verifyPriceProductNameDetailsOnOrderSummeryPopup()[pri:6, instance:TestCases.MTestCase@17f6480]" name="verifyPriceProductNameDetailsOnOrderSummeryPopup" duration-ms="9651" started-at="2021-09-01T16:38:39Z" finished-at="2021-09-01T16:38:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPriceProductNameDetailsOnOrderSummeryPopup -->
-        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="4026" started-at="2021-08-30T15:59:01Z" finished-at="2021-08-30T15:59:05Z">
+        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="2401" started-at="2021-09-01T16:38:49Z" finished-at="2021-09-01T16:38:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebsite -->
-        <test-method status="PASS" signature="verifyClickingOnContinueButtonRedirectSelectPaymentPage()[pri:7, instance:TestCases.MTestCase@17f6480]" name="verifyClickingOnContinueButtonRedirectSelectPaymentPage" duration-ms="6500" started-at="2021-08-30T15:59:05Z" finished-at="2021-08-30T15:59:12Z">
+        <test-method status="PASS" signature="verifyClickingOnContinueButtonRedirectSelectPaymentPage()[pri:7, instance:TestCases.MTestCase@17f6480]" name="verifyClickingOnContinueButtonRedirectSelectPaymentPage" duration-ms="6166" started-at="2021-09-01T16:38:51Z" finished-at="2021-09-01T16:38:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyClickingOnContinueButtonRedirectSelectPaymentPage -->
-        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="4106" started-at="2021-08-30T15:59:12Z" finished-at="2021-08-30T15:59:16Z">
+        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="2468" started-at="2021-09-01T16:38:57Z" finished-at="2021-09-01T16:39:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebsite -->
-        <test-method status="PASS" signature="verifyAllPaymentOptionsListOnPaymentPage()[pri:8, instance:TestCases.MTestCase@17f6480]" name="verifyAllPaymentOptionsListOnPaymentPage" duration-ms="7525" started-at="2021-08-30T15:59:16Z" finished-at="2021-08-30T15:59:24Z">
+        <test-method status="PASS" signature="verifyAllPaymentOptionsListOnPaymentPage()[pri:8, instance:TestCases.MTestCase@17f6480]" name="verifyAllPaymentOptionsListOnPaymentPage" duration-ms="6576" started-at="2021-09-01T16:39:00Z" finished-at="2021-09-01T16:39:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllPaymentOptionsListOnPaymentPage -->
-        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="3713" started-at="2021-08-30T15:59:24Z" finished-at="2021-08-30T15:59:27Z">
+        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="2403" started-at="2021-09-01T16:39:06Z" finished-at="2021-09-01T16:39:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebsite -->
-        <test-method status="PASS" signature="verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen()[pri:9, instance:TestCases.MTestCase@17f6480]" name="verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen" duration-ms="7101" started-at="2021-08-30T15:59:27Z" finished-at="2021-08-30T15:59:34Z">
+        <test-method status="PASS" signature="verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen()[pri:9, instance:TestCases.MTestCase@17f6480]" name="verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen" duration-ms="6996" started-at="2021-09-01T16:39:09Z" finished-at="2021-09-01T16:39:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen -->
-        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="3603" started-at="2021-08-30T15:59:34Z" finished-at="2021-08-30T15:59:38Z">
+        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="2524" started-at="2021-09-01T16:39:16Z" finished-at="2021-09-01T16:39:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebsite -->
-        <test-method status="PASS" signature="verifyOrderAmountAndApplyCouponCodeAndValidate()[pri:10, instance:TestCases.MTestCase@17f6480]" name="verifyOrderAmountAndApplyCouponCodeAndValidate" duration-ms="7998" started-at="2021-08-30T15:59:38Z" finished-at="2021-08-30T15:59:46Z">
+        <test-method status="PASS" signature="verifyOrderAmountAndApplyCouponCodeAndValidate()[pri:10, instance:TestCases.MTestCase@17f6480]" name="verifyOrderAmountAndApplyCouponCodeAndValidate" duration-ms="8207" started-at="2021-09-01T16:39:18Z" finished-at="2021-09-01T16:39:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOrderAmountAndApplyCouponCodeAndValidate -->
-        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="3695" started-at="2021-08-30T15:59:46Z" finished-at="2021-08-30T15:59:50Z">
+        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="2223" started-at="2021-09-01T16:39:26Z" finished-at="2021-09-01T16:39:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebsite -->
-        <test-method status="PASS" signature="verifyAfterEnteringValidCardDetailsPayNowEnabled()[pri:11, instance:TestCases.MTestCase@17f6480]" name="verifyAfterEnteringValidCardDetailsPayNowEnabled" duration-ms="18884" started-at="2021-08-30T15:59:50Z" finished-at="2021-08-30T16:00:09Z">
+        <test-method status="PASS" signature="verifyAfterEnteringValidCardDetailsPayNowEnabled()[pri:11, instance:TestCases.MTestCase@17f6480]" name="verifyAfterEnteringValidCardDetailsPayNowEnabled" duration-ms="18696" started-at="2021-09-01T16:39:29Z" finished-at="2021-09-01T16:39:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAfterEnteringValidCardDetailsPayNowEnabled -->
-        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="4174" started-at="2021-08-30T16:00:09Z" finished-at="2021-08-30T16:00:13Z">
+        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="2639" started-at="2021-09-01T16:39:47Z" finished-at="2021-09-01T16:39:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebsite -->
-        <test-method status="PASS" signature="verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails()[pri:12, instance:TestCases.MTestCase@17f6480]" name="verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails" duration-ms="21262" started-at="2021-08-30T16:00:13Z" finished-at="2021-08-30T16:00:34Z">
+        <test-method status="PASS" signature="verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails()[pri:12, instance:TestCases.MTestCase@17f6480]" name="verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails" duration-ms="18932" started-at="2021-09-01T16:39:50Z" finished-at="2021-09-01T16:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails -->
-        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="4144" started-at="2021-08-30T16:00:34Z" finished-at="2021-08-30T16:00:38Z">
+        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="2790" started-at="2021-09-01T16:40:09Z" finished-at="2021-09-01T16:40:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebsite -->
-        <test-method status="PASS" signature="verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen()[pri:13, instance:TestCases.MTestCase@17f6480]" name="verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen" duration-ms="26255" started-at="2021-08-30T16:00:38Z" finished-at="2021-08-30T16:01:04Z">
+        <test-method status="PASS" signature="verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen()[pri:13, instance:TestCases.MTestCase@17f6480]" name="verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen" duration-ms="26059" started-at="2021-09-01T16:40:12Z" finished-at="2021-09-01T16:40:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen -->
-        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="4509" started-at="2021-08-30T16:01:04Z" finished-at="2021-08-30T16:01:09Z">
+        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="2871" started-at="2021-09-01T16:40:38Z" finished-at="2021-09-01T16:40:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebsite -->
-        <test-method status="PASS" signature="verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen()[pri:14, instance:TestCases.MTestCase@17f6480]" name="verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen" duration-ms="31178" started-at="2021-08-30T16:01:09Z" finished-at="2021-08-30T16:01:40Z">
+        <test-method status="PASS" signature="verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen()[pri:14, instance:TestCases.MTestCase@17f6480]" name="verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen" duration-ms="30173" started-at="2021-09-01T16:40:41Z" finished-at="2021-09-01T16:41:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen -->
-        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="4371" started-at="2021-08-30T16:01:40Z" finished-at="2021-08-30T16:01:44Z">
+        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:TestCases.MTestCase@17f6480]" name="launchWebsite" is-config="true" duration-ms="2756" started-at="2021-09-01T16:41:11Z" finished-at="2021-09-01T16:41:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebsite -->
-        <test-method status="PASS" signature="verifyOnClickingCancelButtonRedirectToOrderFailedScreen()[pri:15, instance:TestCases.MTestCase@17f6480]" name="verifyOnClickingCancelButtonRedirectToOrderFailedScreen" duration-ms="25209" started-at="2021-08-30T16:01:44Z" finished-at="2021-08-30T16:02:10Z">
+        <test-method status="PASS" signature="verifyOnClickingCancelButtonRedirectToOrderFailedScreen()[pri:15, instance:TestCases.MTestCase@17f6480]" name="verifyOnClickingCancelButtonRedirectToOrderFailedScreen" duration-ms="25188" started-at="2021-09-01T16:41:14Z" finished-at="2021-09-01T16:41:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOnClickingCancelButtonRedirectToOrderFailedScreen -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:TestCases.MTestCase@17f6480]" name="teardown" is-config="true" duration-ms="828" started-at="2021-08-30T16:02:10Z" finished-at="2021-08-30T16:02:11Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:TestCases.MTestCase@17f6480]" name="teardown" is-config="true" duration-ms="851" started-at="2021-09-01T16:41:39Z" finished-at="2021-09-01T16:41:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

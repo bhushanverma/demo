@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="245.798" tests="15" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="216.39" tests="15" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_271\jre\bin"/>
     <property name="java.vm.version" value="25.271-b09"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Bhushan Verma\demo"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\demo"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Bhushan Verma\demo"/>
+    <property name="user.dir" value="D:\demo"/>
     <property name="java.runtime.version" value="1.8.0_271-b09"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk1.8.0_271\jre\lib\endorsed"/>
@@ -63,19 +63,19 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase name="verifyMidTransPillowAddedToCartWith20000" classname="TestCases.MTestCase" time="0.703"/>
-  <testcase name="verifyClickOnBuyNowRedirectToCheckOutPage" classname="TestCases.MTestCase" time="0.191"/>
-  <testcase name="verifyCheckOutDetails" classname="TestCases.MTestCase" time="0.998"/>
-  <testcase name="verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable" classname="TestCases.MTestCase" time="3.827"/>
-  <testcase name="verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup" classname="TestCases.MTestCase" time="5.952"/>
-  <testcase name="verifyPriceProductNameDetailsOnOrderSummeryPopup" classname="TestCases.MTestCase" time="10.221"/>
-  <testcase name="verifyClickingOnContinueButtonRedirectSelectPaymentPage" classname="TestCases.MTestCase" time="6.501"/>
-  <testcase name="verifyAllPaymentOptionsListOnPaymentPage" classname="TestCases.MTestCase" time="7.525"/>
-  <testcase name="verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen" classname="TestCases.MTestCase" time="7.101"/>
-  <testcase name="verifyOrderAmountAndApplyCouponCodeAndValidate" classname="TestCases.MTestCase" time="7.999"/>
-  <testcase name="verifyAfterEnteringValidCardDetailsPayNowEnabled" classname="TestCases.MTestCase" time="18.884"/>
-  <testcase name="verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails" classname="TestCases.MTestCase" time="21.262"/>
-  <testcase name="verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen" classname="TestCases.MTestCase" time="26.255"/>
-  <testcase name="verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen" classname="TestCases.MTestCase" time="31.178"/>
-  <testcase name="verifyOnClickingCancelButtonRedirectToOrderFailedScreen" classname="TestCases.MTestCase" time="25.209"/>
+  <testcase name="verifyMidTransPillowAddedToCartWith20000" classname="TestCases.MTestCase" time="0.667"/>
+  <testcase name="verifyClickOnBuyNowRedirectToCheckOutPage" classname="TestCases.MTestCase" time="0.582"/>
+  <testcase name="verifyCheckOutDetails" classname="TestCases.MTestCase" time="0.757"/>
+  <testcase name="verifyNameEmailPhoneCityAddressPostalCodeFieldsAreEditable" classname="TestCases.MTestCase" time="2.431"/>
+  <testcase name="verifyClickingOnCheckoutButtonRedirectToOrderSummaryPopup" classname="TestCases.MTestCase" time="6.063"/>
+  <testcase name="verifyPriceProductNameDetailsOnOrderSummeryPopup" classname="TestCases.MTestCase" time="9.651"/>
+  <testcase name="verifyClickingOnContinueButtonRedirectSelectPaymentPage" classname="TestCases.MTestCase" time="6.165"/>
+  <testcase name="verifyAllPaymentOptionsListOnPaymentPage" classname="TestCases.MTestCase" time="6.576"/>
+  <testcase name="verifyClickOnCreditDebitCardPaymentMethodRedirectedCardDetailsScreen" classname="TestCases.MTestCase" time="6.996"/>
+  <testcase name="verifyOrderAmountAndApplyCouponCodeAndValidate" classname="TestCases.MTestCase" time="8.207"/>
+  <testcase name="verifyAfterEnteringValidCardDetailsPayNowEnabled" classname="TestCases.MTestCase" time="18.696"/>
+  <testcase name="verifyClickingOnPayNowRedirectToBankPaymentScreenThanVerifyAllExitingDetails" classname="TestCases.MTestCase" time="18.934"/>
+  <testcase name="verifyOnClickingOKButtonWithValidOTPRedirectToOrderSuccssfullScreen" classname="TestCases.MTestCase" time="26.058"/>
+  <testcase name="verifyOnClickingOKButtonWithInvalidOTPRedirectToOrderFailedScreen" classname="TestCases.MTestCase" time="30.172"/>
+  <testcase name="verifyOnClickingCancelButtonRedirectToOrderFailedScreen" classname="TestCases.MTestCase" time="25.188"/>
 </testsuite>

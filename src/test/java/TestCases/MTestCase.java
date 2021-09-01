@@ -19,7 +19,7 @@ public class MTestCase {
 
     @BeforeClass(groups = {"Req"})
     public void tearUp() {
-        driver = Setup.LaunchBrowser("chrome");
+        driver = Setup.LaunchBrowser("firefox");
         homePage = new HomePage(driver);
         shoppingCart = new ShoppingCart(driver);
         orderSummary  = new OrderSummary(driver);

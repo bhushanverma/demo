@@ -34,9 +34,6 @@ public class CreditDebitCard extends BasePage{
     @FindBy(xpath = "//button[@name='cancel']")
     private WebElement CancelButton;
     private String DiscountCheckBox = "//input[@name='promo']";
-    @FindBy(xpath = "//a[@class='button-main-content']")
-    WebElement UseAnotherPaymentOptionButton;
-
 
     public boolean verifyCreditDebitCardLogoVisible()
     {
@@ -114,7 +111,6 @@ public class CreditDebitCard extends BasePage{
     public void enterInValidOTP()
     {
         enterText((InputOTP), properties.getProperty("InvalidOTP"));
-        System.out.println("entered invalid otp");
     }
     public boolean failedScreenDiplayed()
     {
